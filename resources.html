@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources &amp; Glossary — HR Resources</title>
+    <meta name="description"
+        content="Official portals directory, HR glossary with 50+ terms, salary calculation reference, HRBP career development roadmap, and reading list." />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body data-page="resources">
+    <div class="reading-progress" id="readingProgress"></div>
+    <canvas id="particleCanvas"></canvas>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="app-layout">
+        <aside class="sidebar" id="sidebar"></aside>
+        <main class="main-content">
+            <div class="page-header">
+                <div class="page-header-inner">
+                    <h1>📚 Resources &amp; Glossary</h1>
+                    <p>Official portals directory, comprehensive HR glossary, salary calculation reference, HRBP career
+                        development roadmap, and recommended reading.</p>
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="search-bar">
+                    <div class="search-input-wrap"><span class="search-icon">🔍</span><input type="text"
+                            class="search-input" id="searchInput" placeholder="Search resources and terms…" /><span
+                            class="search-kbd">Ctrl+K</span></div>
+                    <div class="search-results-info" id="searchInfo"></div>
+                </div>
+
+                <!-- OFFICIAL PORTALS -->
+                <div class="section" id="portals">
+                    <div class="section-header">
+                        <div class="section-icon">🌐</div>
+                        <h2>Official Portals &amp; Useful Links</h2>
+                    </div>
+                    <p class="section-purpose">Directory of commonly referenced government portals and tools for HR
+                        practitioners.</p>
+                    <div class="section-body">
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🏛️</span> Government Portals</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Portal</th>
+                                            <th>URL</th>
+                                            <th>Purpose</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>EPFO Unified Portal</td>
+                                            <td>unifiedportal-emp.epfindia.gov.in</td>
+                                            <td>EPF passbook, UAN, claims</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EPFO Employer Portal</td>
+                                            <td>unifiedportal-emp.epfindia.gov.in/epfo</td>
+                                            <td>ECR filing, member management</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ESIC Portal</td>
+                                            <td>esic.gov.in</td>
+                                            <td>ESI registration, contribution, claims</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Income Tax Portal</td>
+                                            <td>incometax.gov.in</td>
+                                            <td>ITR filing, Form 16, TDS returns</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TRACES</td>
+                                            <td>tdscpc.gov.in</td>
+                                            <td>TDS certificates (Form 16/16A), corrections</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GST Portal</td>
+                                            <td>gst.gov.in</td>
+                                            <td>GST registration, returns, payments</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shram Suvidha Portal</td>
+                                            <td>shramsuvidha.gov.in</td>
+                                            <td>Unified labour law compliance, inspections</td>
+                                        </tr>
+                                        <tr>
+                                            <td>NSDL (TIN)</td>
+                                            <td>tin.tin.nsdl.com</td>
+                                            <td>TAN registration, TDS/TCS payments</td>
+                                        </tr>
+                                        <tr>
+                                            <td>NCS (National Career Service)</td>
+                                            <td>ncs.gov.in</td>
+                                            <td>Job posting, candidate search</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MCA Portal</td>
+                                            <td>mca.gov.in</td>
+                                            <td>Company registration, annual filings</td>
+                                        </tr>
+                                        <tr>
+                                            <td>DigiLocker</td>
+                                            <td>digilocker.gov.in</td>
+                                            <td>Digital document verification</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Skill India / NSDC</td>
+                                            <td>nsdcindia.org</td>
+                                            <td>Skill development, certification</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🏖️</span> Goa-Specific Portals</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Portal</th>
+                                            <th>URL / Reference</th>
+                                            <th>Purpose</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Goa Online (e-Services)</td>
+                                            <td>goaonline.gov.in</td>
+                                            <td>Shop &amp; Establishment registration, various state services</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Directorate of Labour</td>
+                                            <td>labour.goa.gov.in</td>
+                                            <td>Labour law info, notifications, forms</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Goa State Gazette</td>
+                                            <td>goaprintingpress.gov.in</td>
+                                            <td>Official gazette notifications</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Goa Professional Tax</td>
+                                            <td>goagst.gov.in (or dedicated PT portal)</td>
+                                            <td>PT registration and filings</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p class="inline-disclaimer">URLs may change. Verify portal addresses before accessing.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- HR GLOSSARY -->
+                <div class="section" id="glossary">
+                    <div class="section-header">
+                        <div class="section-icon">📖</div>
+                        <h2>HR Glossary — 60+ Terms</h2>
+                    </div>
+                    <p class="section-purpose">Quick reference definitions for commonly used HR and statutory terms in
+                        India.</p>
+                    <div class="section-body">
+                        <div class="tab-nav">
+                            <button class="tab-btn active" data-tab="tab-az1">A — F</button>
+                            <button class="tab-btn" data-tab="tab-az2">G — N</button>
+                            <button class="tab-btn" data-tab="tab-az3">O — Z</button>
+                        </div>
+                        <div class="tab-panel active" id="tab-az1">
+                            <dl class="glossary-list">
+                                <dt>Absenteeism</dt>
+                                <dd>Habitual absence from work without valid reason or notice.</dd>
+                                <dt>Appraisal</dt>
+                                <dd>Periodic evaluation of employee performance against set goals and competencies.</dd>
+                                <dt>Attrition</dt>
+                                <dd>Reduction in workforce through resignations, retirements, or other voluntary
+                                    departures. Attrition rate is commonly calculated as: (Separations ÷ Average
+                                    Headcount) × 100.</dd>
+                                <dt>Background Verification (BGV)</dt>
+                                <dd>Process of verifying a candidate's employment history, education, criminal records,
+                                    and references before or after hiring.</dd>
+                                <dt>Bonus (Statutory)</dt>
+                                <dd>Under the Payment of Bonus Act, 1965 — employers with 20+ employees must pay a
+                                    minimum bonus of 8.33% of salary (max 20%) to employees earning up to ₹21,000/month.
+                                </dd>
+                                <dt>CTC (Cost to Company)</dt>
+                                <dd>Total cost an employer incurs for an employee annually, including base salary,
+                                    allowances, employer PF/ESI contributions, and other benefits.</dd>
+                                <dt>Challan</dt>
+                                <dd>Official form/receipt for statutory payments (e.g., Challan 281 for TDS, EPF challan
+                                    for PF deposits).</dd>
+                                <dt>Confirmation</dt>
+                                <dd>Change of employment status from probation to permanent after satisfactory
+                                    performance during the probation period.</dd>
+                                <dt>Contract Labour</dt>
+                                <dd>Workers employed through a contractor for specific tasks or durations. Governed by
+                                    the Contract Labour (Regulation &amp; Abolition) Act, 1970.</dd>
+                                <dt>DA (Dearness Allowance)</dt>
+                                <dd>Cost-of-living adjustment allowance, commonly applied to government and public
+                                    sector employees. Revised periodically based on consumer price index.</dd>
+                                <dt>Domestic Inquiry</dt>
+                                <dd>Formal internal inquiry conducted before disciplinary action against an employee for
+                                    misconduct.</dd>
+                                <dt>ECR (Electronic Challan-cum-Return)</dt>
+                                <dd>Monthly return filed on the EPFO Unified Portal for EPF contributions.</dd>
+                                <dt>EL (Earned Leave)</dt>
+                                <dd>Leave accrued based on days worked. Also called Privilege Leave. Encashable and
+                                    commonly carries forward.</dd>
+                                <dt>EPS (Employee Pension Scheme)</dt>
+                                <dd>Pension scheme under EPFO. 8.33% of employer's EPF contribution goes to EPS. Pension
+                                    available after 10 years of service.</dd>
+                                <dt>ESI (Employee State Insurance)</dt>
+                                <dd>Social security scheme for employees earning ≤ ₹21,000/month. Covers medical,
+                                    disability, maternity, and dependants' benefits.</dd>
+                                <dt>F&amp;F (Full &amp; Final Settlement)</dt>
+                                <dd>Final payment to an employee upon separation, covering unpaid salary, leave
+                                    encashment, bonuses, gratuity, and any recoveries.</dd>
+                                <dt>Fixed-Term Employment</dt>
+                                <dd>Employment for a specified duration with defined start and end dates, with same
+                                    benefits as permanent employees during the term.</dd>
+                                <dt>Form 16</dt>
+                                <dd>TDS certificate issued by employer to employee showing salary details and tax
+                                    deducted. Used for filing income tax returns.</dd>
+                            </dl>
+                        </div>
+                        <div class="tab-panel" id="tab-az2">
+                            <dl class="glossary-list">
+                                <dt>Gratuity</dt>
+                                <dd>Lump-sum payment to employees who have completed 5+ years of continuous service.
+                                    Formula: (Last drawn salary × 15 × years of service) ÷ 26. Tax-exempt up to ₹20
+                                    lakhs.</dd>
+                                <dt>Gross Salary</dt>
+                                <dd>Total salary before deductions (PF, ESI, PT, TDS). Includes basic pay + all
+                                    allowances.</dd>
+                                <dt>HRA (House Rent Allowance)</dt>
+                                <dd>Allowance for rental accommodation. Tax exemption available under Section 10(13A)
+                                    based on rent paid, salary, and city of residence.</dd>
+                                <dt>HRIS (HR Information System)</dt>
+                                <dd>Software for managing HR data — employee records, payroll, attendance, leave,
+                                    compliance, and analytics.</dd>
+                                <dt>ICC (Internal Complaints Committee)</dt>
+                                <dd>Committee constituted under the POSH Act, 2013 for handling sexual harassment
+                                    complaints. Required for organisations with 10+ employees.</dd>
+                                <dt>Increment</dt>
+                                <dd>Annual salary increase, commonly based on performance rating, inflation adjustment,
+                                    and market benchmarking.</dd>
+                                <dt>Industrial Dispute</dt>
+                                <dd>Conflict between employer and employees/union regarding employment conditions,
+                                    covered under the Industrial Disputes Act, 1947 (now Code on Industrial Relations,
+                                    2020).</dd>
+                                <dt>KRA (Key Result Area)</dt>
+                                <dd>Major responsibility areas that an employee contributes to. Used as the basis for
+                                    performance evaluation.</dd>
+                                <dt>KPI (Key Performance Indicator)</dt>
+                                <dd>Measurable metric that tracks performance against a KRA. Should be specific,
+                                    measurable, and time-bound.</dd>
+                                <dt>LWF (Labour Welfare Fund)</dt>
+                                <dd>State-mandated fund with contributions from employer, employee, and sometimes the
+                                    government for worker welfare activities.</dd>
+                                <dt>Maternity Benefit</dt>
+                                <dd>Under the Maternity Benefit Act, 1961 (amended 2017): 26 weeks of paid leave for
+                                    first two children, 12 weeks for subsequent; crèche facility for 50+ employees.</dd>
+                                <dt>Minimum Wages</dt>
+                                <dd>Floor wage rates notified by Central and State governments under the Minimum Wages
+                                    Act, 1948 (now Code on Wages, 2019). Vary by state, industry, and skill level.</dd>
+                                <dt>Misconduct</dt>
+                                <dd>Employee behaviour that violates organisational rules or expected standards of
+                                    conduct. Grounds for disciplinary action after due inquiry.</dd>
+                                <dt>Net Salary (Take-Home)</dt>
+                                <dd>Salary received after all deductions — gross salary minus PF, ESI, PT, TDS, and
+                                    other deductions.</dd>
+                                <dt>Notice Period</dt>
+                                <dd>Duration between submission of resignation and last working day. As per employment
+                                    contract, commonly 1–3 months.</dd>
+                                <dt>NPS (National Pension System)</dt>
+                                <dd>Voluntary retirement savings scheme. Employer can contribute up to 10% of salary
+                                    with tax benefits under Section 80CCD.</dd>
+                            </dl>
+                        </div>
+                        <div class="tab-panel" id="tab-az3">
+                            <dl class="glossary-list">
+                                <dt>Onboarding</dt>
+                                <dd>Structured process of integrating a new employee into the organisation —
+                                    documentation, orientation, training, and team introduction.</dd>
+                                <dt>Overtime</dt>
+                                <dd>Hours worked beyond standard working hours. Under the Factories Act, overtime is
+                                    typically compensated at twice the normal rate.</dd>
+                                <dt>PAN (Permanent Account Number)</dt>
+                                <dd>10-digit alphanumeric identifier for tax purposes. Required for all salaried
+                                    employees.</dd>
+                                <dt>PF (Provident Fund / EPF)</dt>
+                                <dd>Retirement savings scheme where employee and employer each contribute 12% of basic
+                                    salary + DA. Managed by EPFO.</dd>
+                                <dt>PIP (Performance Improvement Plan)</dt>
+                                <dd>Structured plan for underperforming employees, defining improvement areas, targets,
+                                    timelines, support, and consequences.</dd>
+                                <dt>POSH</dt>
+                                <dd>Prevention of Sexual Harassment at Workplace — refers to the Sexual Harassment of
+                                    Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013.</dd>
+                                <dt>Professional Tax (PT)</dt>
+                                <dd>State-level tax on employment/profession, capped at ₹2,500 per annum. Deducted by
+                                    employer and remitted to the state.</dd>
+                                <dt>Probation</dt>
+                                <dd>Initial employment period (commonly 3–6 months) during which performance is assessed
+                                    before confirmation.</dd>
+                                <dt>Retrenchment</dt>
+                                <dd>Termination of service for economic reasons (not misconduct). Governed by specific
+                                    provisions including notice, compensation, and government permissions for
+                                    establishments with 100+ workers.</dd>
+                                <dt>Relieving Letter</dt>
+                                <dd>Document issued by the employer confirming that the employee has been relieved of
+                                    duties after completing all formalities.</dd>
+                                <dt>SOP (Standard Operating Procedure)</dt>
+                                <dd>Documented step-by-step process for performing a specific task consistently.</dd>
+                                <dt>Standing Orders</dt>
+                                <dd>Rules of employment governing conditions of work — certified under the Industrial
+                                    Employment (Standing Orders) Act, 1946. Required for establishments with 100+
+                                    workers (50+ in some states).</dd>
+                                <dt>Superannuation</dt>
+                                <dd>Employer-funded retirement benefit, in addition to PF and gratuity. An additional
+                                    contribution commonly between 5–15% of basic salary.</dd>
+                                <dt>TAN (Tax Deduction Account Number)</dt>
+                                <dd>10-digit alphanumeric number required for all entities deducting TDS. Used for
+                                    filing TDS returns and challans.</dd>
+                                <dt>TDS (Tax Deducted at Source)</dt>
+                                <dd>Income tax deducted by the employer from employee salary based on declared
+                                    investments and applicable tax slab.</dd>
+                                <dt>UAN (Universal Account Number)</dt>
+                                <dd>Unique 12-digit number assigned to each EPF member. Remains the same throughout
+                                    career; member IDs map to it.</dd>
+                                <dt>Variable Pay</dt>
+                                <dd>Performance-linked compensation component paid periodically (quarterly/annually)
+                                    based on individual and/or company performance.</dd>
+                                <dt>Wage Register</dt>
+                                <dd>Statutory register maintaining records of wages paid to employees. Required under
+                                    the Payment of Wages Act.</dd>
+                                <dt>Whistleblower Policy</dt>
+                                <dd>Mechanism for employees to report unethical conduct, fraud, or policy violations
+                                    without fear of retaliation.</dd>
+                                <dt>Workmen</dt>
+                                <dd>Under the Industrial Disputes Act — persons employed in manual, unskilled, skilled,
+                                    technical, operational, clerical, or supervisory roles (with salary ≤ ₹10,000/month
+                                    — threshold varies by interpretation and new codes).</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- SALARY REFERENCE -->
+                <div class="section" id="salary">
+                    <div class="section-header">
+                        <div class="section-icon">💰</div>
+                        <h2>Salary Structure Reference</h2>
+                    </div>
+                    <p class="section-purpose">Common salary components and indicative structuring in Indian
+                        organisations.</p>
+                    <div class="section-body">
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📊</span> CTC Breakdown (Typical Structure)</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Component</th>
+                                            <th>Typical %</th>
+                                            <th>Tax Treatment</th>
+                                            <th>Notes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Basic Salary</td>
+                                            <td>40–50% of CTC</td>
+                                            <td>Fully taxable</td>
+                                            <td>Drives PF, gratuity, HRA calculations</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HRA</td>
+                                            <td>40–50% of Basic</td>
+                                            <td>Partial exemption (Sec 10(13A))</td>
+                                            <td>Higher in metro cities, lower in non-metros</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Special Allowance</td>
+                                            <td>Variable (balancing figure)</td>
+                                            <td>Fully taxable</td>
+                                            <td>Flexible component to balance CTC</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Conveyance / Transport</td>
+                                            <td>₹1,600/month (old regime)</td>
+                                            <td>Was exempt up to ₹1,600/month</td>
+                                            <td>Less relevant under new tax regime</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Medical Allowance</td>
+                                            <td>₹1,250/month (old regime)</td>
+                                            <td>Was exempt up to ₹15,000/year</td>
+                                            <td>Less relevant under new tax regime</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LTA (Leave Travel Allowance)</td>
+                                            <td>Variable</td>
+                                            <td>Exempt for actual travel (conditions apply)</td>
+                                            <td>Claimed twice in a block of 4 years</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Employer PF (12%)</td>
+                                            <td>12% of Basic</td>
+                                            <td>Exempt up to threshold</td>
+                                            <td>3.67% to EPF, 8.33% to EPS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Employer ESI (3.25%)</td>
+                                            <td>3.25% of Gross</td>
+                                            <td>N/A</td>
+                                            <td>If gross ≤ ₹21,000/month</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gratuity (4.81%)</td>
+                                            <td>~4.81% of Basic</td>
+                                            <td>Exempt up to ₹20L</td>
+                                            <td>Provisioned monthly, paid at exit</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bonus / Variable Pay</td>
+                                            <td>5–20% of CTC</td>
+                                            <td>Taxable</td>
+                                            <td>Performance-linked or statutory</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🔢</span> Quick Formulas</h3>
+                            <div class="callout info"><span class="callout-icon">📐</span><span>
+                                    <strong>Gross Salary</strong> = Basic + HRA + Special Allowance + all other
+                                    allowances<br />
+                                    <strong>Net Salary</strong> = Gross − Employee PF − Employee ESI − Professional Tax
+                                    − TDS<br />
+                                    <strong>CTC</strong> = Gross + Employer PF + Employer ESI + Gratuity + any other
+                                    employer cost<br />
+                                    <strong>Gratuity</strong> = (Last Basic Salary × 15 × Years of Service) ÷ 26<br />
+                                    <strong>Bonus (Statutory Min)</strong> = 8.33% of salary earned during the
+                                    year<br />
+                                    <strong>PF Contribution</strong> = 12% of (Basic + DA) — both employee and
+                                    employer<br />
+                                    <strong>Daily Rate</strong> = Monthly Salary ÷ 26 (commonly used for statutory
+                                    calculations)
+                                </span></div>
+                        </div>
+                        <p class="inline-disclaimer">Salary structures vary by organisation. Tax rules change with
+                            fiscal year. Consult a tax professional for specific advice.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- HRBP CAREER DEVELOPMENT -->
+                <div class="section" id="hrbp">
+                    <div class="section-header">
+                        <div class="section-icon">🚀</div>
+                        <h2>How to Become an HR Business Partner</h2>
+                    </div>
+                    <p class="section-purpose">A comprehensive roadmap — from understanding the role to building
+                        competencies, transitioning from generalist to HRBP, and proving business impact.</p>
+                    <div class="section-body">
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📋</span> What Is an HRBP?</h3>
+                            <div class="callout info"><span class="callout-icon">💡</span><span>An <strong>HR Business
+                                        Partner (HRBP)</strong> is an HR professional who is embedded within a business
+                                    unit and works strategically with business leaders to align people practices with
+                                    business goals. Unlike traditional HR (which is process-focused), an HRBP is
+                                    <strong>outcome-focused</strong> — advising on talent strategy, organisational
+                                    design, change management, and performance.</span></div>
+                            <div class="callout note"><span class="callout-icon">📌</span><span><strong>For SMEs &
+                                        MSMEs:</strong> Most Indian small and mid-sized companies don't have a formal
+                                    "HRBP" title — and that's fine. The HRBP <em>mindset</em> (thinking strategically
+                                    about people, connecting HR actions to business outcomes, advising leaders
+                                    proactively) can be adopted by any HR professional regardless of title, team size,
+                                    or organisational structure.</span></div>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Traditional HR</th>
+                                            <th>HRBP</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Processes policies and requests</td>
+                                            <td>Advises leaders on people strategy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Reactive — responds to issues</td>
+                                            <td>Proactive — anticipates needs</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Focuses on compliance</td>
+                                            <td>Focuses on business impact</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Reports to HR Head only</td>
+                                            <td>Reports to/partners with business leaders</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Measures HR metrics (time-to-hire, etc.)</td>
+                                            <td>Measures business outcomes (revenue per employee, retention impact,
+                                                etc.)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>"What does the policy say?"</td>
+                                            <td>"What does the business need?"</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">🗺️
+                                HRBP Career Roadmap <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="flow-steps">
+                                        <div class="flow-step">
+                                            <div class="step-dot">1</div>
+                                            <div class="step-content">
+                                                <h4>Build the Foundation (Years 0–3)</h4>
+                                                <p><strong>Role:</strong> HR Executive / HR
+                                                    Generalist<br /><strong>Focus:</strong> Master operational HR —
+                                                    payroll, onboarding, compliance, HRIS, statutory
+                                                    compliance.<br /><strong>Goal:</strong> Become the go-to person for
+                                                    "how things work" in HR.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="step-dot">2</div>
+                                            <div class="step-content">
+                                                <h4>Develop Business Acumen (Years 3–5)</h4>
+                                                <p><strong>Role:</strong> Sr. HR Generalist / HR
+                                                    Manager<br /><strong>Focus:</strong> Understand the business —
+                                                    attend business reviews, learn P&amp;L, understand the
+                                                    product/service.<br /><strong>Goal:</strong> Be able to answer: "How
+                                                    does HR impact the business's bottom line?"</p>
+                                            </div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="step-dot">3</div>
+                                            <div class="step-content">
+                                                <h4>Start Advising, Not Just Executing (Years 5–7)</h4>
+                                                <p><strong>Role:</strong> HR Manager / HRBP
+                                                    (junior)<br /><strong>Focus:</strong> Own the people strategy for a
+                                                    business unit. Drive talent reviews, succession planning, org
+                                                    design.<br /><strong>Goal:</strong> Business leaders start coming to
+                                                    you for strategic advice.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="step-dot">4</div>
+                                            <div class="step-content">
+                                                <h4>Become a Strategic Partner (Years 7+)</h4>
+                                                <p><strong>Role:</strong> HRBP / Sr.
+                                                    HRBP<br /><strong>Focus:</strong> Sit at the business table.
+                                                    Influence business decisions. Drive transformation and culture
+                                                    change.<br /><strong>Goal:</strong> You're not just "HR" — you're a
+                                                    business leader who specialises in people.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">🧠 10
+                                Competencies Every HRBP Needs <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="table-wrap">
+                                        <table class="ref-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Competency</th>
+                                                    <th>Why It Matters</th>
+                                                    <th>How to Build It</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Business Acumen</td>
+                                                    <td>You can't partner with the business if you don't understand it
+                                                    </td>
+                                                    <td>Attend business reviews. Read industry reports. Ask leaders to
+                                                        explain KPIs.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Data Literacy</td>
+                                                    <td>HRBPs must make data-driven recommendations</td>
+                                                    <td>Master HR analytics. Learn to tell stories with data.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Coaching &amp; Consulting</td>
+                                                    <td>Your primary value is advising leaders</td>
+                                                    <td>Get certified in coaching. Practice powerful questions.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Change Management</td>
+                                                    <td>Every business initiative has a people dimension</td>
+                                                    <td>Study ADKAR, Kotter. Lead small change initiatives.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Talent Management</td>
+                                                    <td>Building capability and bench strength is core</td>
+                                                    <td>Own talent reviews, succession planning, HiPo programs.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Employee Relations</td>
+                                                    <td>Handling complex people situations with judgment</td>
+                                                    <td>Build expertise in investigations, conflict resolution.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Org Design &amp; Workforce Planning</td>
+                                                    <td>Structuring teams for optimal performance</td>
+                                                    <td>Study org design principles. Participate in restructuring.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>Influence Without Authority</td>
+                                                    <td>You advise, you don't control</td>
+                                                    <td>Build relationships. Deliver results. Be the person leaders
+                                                        want in the room.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>Commercial Orientation</td>
+                                                    <td>Understanding ROI, cost-per-hire, revenue-per-employee</td>
+                                                    <td>Connect every HR initiative to a business metric.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>Courageous Conversations</td>
+                                                    <td>HRBPs must challenge leaders on people decisions</td>
+                                                    <td>Practice pushback with empathy. Use data to support your
+                                                        position.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">📜
+                                Certifications &amp; Learning Resources <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="table-wrap">
+                                        <table class="ref-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Certification</th>
+                                                    <th>Provider</th>
+                                                    <th>Focus</th>
+                                                    <th>India Relevance</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>SHRM-CP / SHRM-SCP</td>
+                                                    <td>SHRM</td>
+                                                    <td>Global HR competencies</td>
+                                                    <td>Widely recognised in Indian MNCs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HRCI — PHR / SPHR</td>
+                                                    <td>HR Certification Institute</td>
+                                                    <td>US-focused HR knowledge</td>
+                                                    <td>Good for MNC exposure</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CIPD Level 5/7</td>
+                                                    <td>CIPD</td>
+                                                    <td>UK-standard people management</td>
+                                                    <td>Growing recognition in India</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>AIHR — HRBP Certificate</td>
+                                                    <td>Academy to Innovate HR</td>
+                                                    <td>Practical HRBP skills</td>
+                                                    <td>Well-designed, self-paced</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ICF Coaching Certification</td>
+                                                    <td>International Coaching Federation</td>
+                                                    <td>Professional coaching</td>
+                                                    <td>Strong differentiator for HRBPs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Labour Laws — Indian Context</td>
+                                                    <td>XLRI / TISS / Symbiosis</td>
+                                                    <td>Indian labour laws &amp; IR</td>
+                                                    <td>Essential for Indian HR</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">📅 HRBP
+                                30-60-90 Day Plan <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <p><strong>Days 1–30: Listen &amp; Learn</strong></p>
+                                    <p>• Understand the business unit's strategy and challenges<br />• Meet all key
+                                        stakeholders<br />• Review existing HR data (attrition, engagement)<br />• Build
+                                        relationships — listen 80%, talk 20%</p>
+                                    <p><strong>Days 31–60: Diagnose &amp; Plan</strong></p>
+                                    <p>• Identify top 3 people challenges<br />• Analyse talent gaps and flight
+                                        risks<br />• Begin co-creating people priorities with leaders<br />• Address
+                                        quick wins (pending concerns, process pain points)</p>
+                                    <p><strong>Days 61–90: Act &amp; Demonstrate Value</strong></p>
+                                    <p>• Launch 1–2 focused initiatives tied to business priorities<br />• Set up
+                                        regular rhythm with leaders<br />• Establish credibility through visible,
+                                        measurable actions<br />• Create a 6-month people roadmap</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="inline-disclaimer">Career paths and timelines are indicative and vary by organisation,
+                            industry, and individual effort.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- USEFUL BOOKS & REFERENCES -->
+                <div class="section" id="books">
+                    <div class="section-header">
+                        <div class="section-icon">📕</div>
+                        <h2>Recommended Reading &amp; References</h2>
+                    </div>
+                    <p class="section-purpose">Commonly referenced books and publications for HR professionals in India.
+                    </p>
+                    <div class="section-body">
+                        <div class="table-wrap">
+                            <table class="ref-table">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Area</th>
+                                        <th>Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Taxmann's Labour Laws (Annual)</td>
+                                        <td>Labour Law</td>
+                                        <td>Comprehensive compilation of all central labour laws</td>
+                                    </tr>
+                                    <tr>
+                                        <td>S.N. Misra's Labour &amp; Industrial Laws</td>
+                                        <td>Labour Law</td>
+                                        <td>Standard textbook for Indian labour law</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P.L. Malik's Industrial Law</td>
+                                        <td>Industrial Law</td>
+                                        <td>Authoritative reference with case law</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bare Acts (from India Code Portal)</td>
+                                        <td>Statutory</td>
+                                        <td>Original text of all applicable laws — indiacode.nic.in</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SHRM India Resources</td>
+                                        <td>HR Best Practices</td>
+                                        <td>Tools, templates, research — india.shrm.org</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NHRD Network Journal</td>
+                                        <td>HR Research</td>
+                                        <td>Indian HR research and thought leadership</td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Economic Times — HR News</td>
+                                        <td>Industry News</td>
+                                        <td>HR policy updates, salary trends, labour market</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C.S. Venkata Ratnam's "Globalization and Labour Management Relations"</td>
+                                        <td>IR / Labour Relations</td>
+                                        <td>Indian perspective on industrial relations</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="inline-disclaimer">This is an informational list. Inclusion does not imply
+                            endorsement.</p>
+                    </div>
+                </div>
+
+            </div>
+            <footer class="global-footer" id="globalFooter"></footer>
+        </main>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Top">↑</button>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1340 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR Toolkit — HR Resources</title>
+    <meta name="description"
+        content="Practical HR toolkit — manager enablement frameworks, employee engagement activities, retention & attrition diagnostics, and HR metrics & workforce planning." />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body data-page="toolkit">
+    <div class="reading-progress" id="readingProgress"></div>
+    <canvas id="particleCanvas"></canvas>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="app-layout">
+        <aside class="sidebar" id="sidebar"></aside>
+        <main class="main-content">
+            <div class="page-header">
+                <div class="page-header-inner">
+                    <h1>🧰 HR Toolkit</h1>
+                    <p>Practical tools for HR professionals — manager enablement frameworks, engagement activities,
+                        retention & attrition diagnostics, and HR metrics & workforce planning.</p>
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="search-bar">
+                    <div class="search-input-wrap"><span class="search-icon">🔍</span><input type="text"
+                            class="search-input" id="searchInput" placeholder="Search toolkit…" /><span
+                            class="search-kbd">Ctrl+K</span></div>
+                    <div class="search-results-info" id="searchInfo"></div>
+                </div>
+
+
+                <!-- Jump-link Table of Contents -->
+                <div class="quick-grid" style="margin-bottom:var(--space-xl)">
+                    <a class="quick-card" href="#managers"><span class="card-icon"></span>
+                        <h3>Manager Enablement</h3>
+                        <p>First-time manager guide, feedback frameworks, difficult conversations</p><span
+                            class="card-arrow"></span>
+                    </a>
+                    <a class="quick-card" href="#engagement"><span class="card-icon">🎯</span>
+                        <h3>Engagement Activities</h3>
+                        <p>23 activities across 3 effort tiers + survey template</p><span class="card-arrow"></span>
+                    </a>
+                    <a class="quick-card" href="#retention"><span class="card-icon"></span>
+                        <h3>Retention &amp; Attrition</h3>
+                        <p>10 zero-cost moves, 5-pillar framework, diagnostics</p><span class="card-arrow"></span>
+                    </a>
+                    <a class="quick-card" href="#metrics"><span class="card-icon"></span>
+                        <h3>HR Metrics &amp; Planning</h3>
+                        <p>30+ metrics, workforce planning, 9-box grid, dashboards</p><span class="card-arrow">↓</span>
+                    </a>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <!--  SECTION 1 — MANAGER ENABLEMENT            -->
+                <!-- ═══════════════════════════════════════════ -->
+                <div class="section" id="managers">
+                    <div class="section-header">
+                        <div class="section-icon">👥</div>
+                        <h2>Manager Enablement Toolkit</h2>
+                    </div>
+                    <p class="section-purpose">Equip managers to be better people leaders — from first-time manager
+                        readiness to feedback frameworks, difficult conversations, and building high-performing teams.
+                    </p>
+                    <div class="section-body">
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🆕</span> First-Time Manager — 90-Day Readiness Checklist</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Week</th>
+                                            <th>Focus Area</th>
+                                            <th>Key Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Week 1–2</td>
+                                            <td>Understand Your Role</td>
+                                            <td>Clarify expectations with your manager. Understand the team's current
+                                                goals, challenges, and dynamics. Read existing IDPs and performance
+                                                records.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Week 2–3</td>
+                                            <td>Build Relationships</td>
+                                            <td>Have 1:1 "getting to know you" conversations with every team member. Ask
+                                                about their goals, working style, strengths, and frustrations.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Week 3–4</td>
+                                            <td>Set the Foundation</td>
+                                            <td>Establish a regular 1:1 cadence. Agree on communication norms (response
+                                                times, channels). Set 2–3 team-level priorities for the quarter.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Week 4–6</td>
+                                            <td>Start Coaching</td>
+                                            <td>Begin giving specific, timely feedback. Ask more questions than you
+                                                answer. Focus on developing others, not doing their work.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Week 6–8</td>
+                                            <td>Build Accountability</td>
+                                            <td>Implement clear goal-setting for each team member. Set up transparent
+                                                tracking. Address small performance gaps early — don't let them fester.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Week 8–12</td>
+                                            <td>Reflect & Adjust</td>
+                                            <td>Seek upward feedback from the team. Review what's working and what
+                                                isn't. Adjust your management style based on what you've learned.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="callout note"><span class="callout-icon">💡</span><span>The biggest mistake
+                                    first-time managers make: trying to stay an individual contributor while managing.
+                                    <strong>Your job is now to make your team successful, not to be the star
+                                        yourself.</strong></span></div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">💬</span> Feedback Frameworks for Managers</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Framework</th>
+                                            <th>Structure</th>
+                                            <th>When to Use</th>
+                                            <th>Example</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>SBI (Situation-Behavior-Impact)</strong></td>
+                                            <td>Describe the Situation → the Behavior → the Impact</td>
+                                            <td>Any feedback — positive or constructive</td>
+                                            <td>"In yesterday's client call (S), you interrupted the client twice (B),
+                                                which made them visibly frustrated (I)."</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>STAR (Situation-Task-Action-Result)</strong></td>
+                                            <td>Context → Task → What they did → Outcome</td>
+                                            <td>Performance reviews, positive recognition</td>
+                                            <td>"When the server went down (S/T), you coordinated the team within 10
+                                                minutes (A), and we restored service in 30 minutes — client praised us
+                                                (R)."</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Feedforward</strong></td>
+                                            <td>Focus on future behavior, not past mistakes</td>
+                                            <td>Developmental coaching conversations</td>
+                                            <td>"Next time you're presenting to the board, try making your key ask
+                                                within the first 2 minutes to hold attention."</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Radical Candor</strong></td>
+                                            <td>Care Personally + Challenge Directly</td>
+                                            <td>Ongoing relationship-based feedback</td>
+                                            <td>"I care about your growth, which is why I'm telling you directly — your
+                                                emails to clients need more structure."</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Coaching (GROW)</strong></td>
+                                            <td>Goal → Reality → Options → Will/Way forward</td>
+                                            <td>Development conversations, 1:1 coaching</td>
+                                            <td>"What's your goal? Where are you now? What options do you see? What will
+                                                you commit to?"</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">⚠️</span> Difficult Conversations — Manager's Guide</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Scenario</th>
+                                            <th>Do</th>
+                                            <th>Don't</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Underperformance</strong></td>
+                                            <td>Be specific about gaps. Use data. Co-create an improvement plan with
+                                                timelines. Follow up.</td>
+                                            <td>Be vague ("you need to do better"). Delay the conversation. Skip
+                                                documentation.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Attitude / Behavioral Issues</strong></td>
+                                            <td>Describe observable behavior, not personality. Explain impact on team.
+                                                Set clear expectations.</td>
+                                            <td>Label the person ("you're negative"). Gossip with others before talking
+                                                to them.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Hygiene Issues</strong></td>
+                                            <td>Have the conversation privately. Be empathetic and direct. Frame it as a
+                                                workplace standard.</td>
+                                            <td>Ignore it. Send an anonymous note. Discuss with other team members.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Salary Expectations</strong></td>
+                                            <td>Acknowledge the request. Explain the compensation philosophy. Discuss
+                                                growth and timeline transparently.</td>
+                                            <td>Make promises you can't keep. Dismiss the ask. Compare with other
+                                                employees.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Resignation of a Key Person</strong></td>
+                                            <td>Listen first. Understand the real reason. Explore if there's a genuine
+                                                fix (not just a counter-offer).</td>
+                                            <td>Panic. Make an immediate counter-offer. Guilt-trip them.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Conflict Between Team Members</strong></td>
+                                            <td>Hear both sides separately first. Mediate together. Focus on behaviors,
+                                                not personalities. Agree on norms.</td>
+                                            <td>Take sides. Ignore it hoping it resolves. Punish both without
+                                                understanding.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Termination / Letting Someone Go</strong></td>
+                                            <td>Document everything before the conversation. Be direct but
+                                                compassionate. Explain next steps clearly.</td>
+                                            <td>Drag it out. Be apologetic to the point of being unclear. Deliver it on
+                                                a Friday evening.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">Manager
+                                Effectiveness Model — 7 Dimensions <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="table-wrap">
+                                        <table class="ref-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Dimension</th>
+                                                    <th>Observable Behaviors</th>
+                                                    <th>Red Flags</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Direction Setting</td>
+                                                    <td>Sets clear goals. Aligns team with business priorities.
+                                                        Communicates strategy.</td>
+                                                    <td>Team is unclear about priorities. Frequent context switching.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>People Development</td>
+                                                    <td>Conducts meaningful 1:1s. Gives regular feedback. Creates
+                                                        learning opportunities.</td>
+                                                    <td>No career conversations. Team members leave for growth
+                                                        elsewhere.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Performance Management</td>
+                                                    <td>Sets expectations early. Tracks progress. Addresses
+                                                        underperformance promptly.</td>
+                                                    <td>Rates everyone equally. Avoids difficult conversations. No
+                                                        documentation.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Team Building</td>
+                                                    <td>Creates psychological safety. Resolves conflict. Celebrates
+                                                        wins. Builds trust.</td>
+                                                    <td>High attrition in their team. Team members don't speak up. Silos
+                                                        within the team.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Communication</td>
+                                                    <td>Shares information proactively. Listens actively. Is transparent
+                                                        about decisions.</td>
+                                                    <td>Team hears news from others first. "Mushroom management" (kept
+                                                        in the dark).</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Delegation & Empowerment</td>
+                                                    <td>Trusts team with ownership. Removes blockers. Doesn't
+                                                        micromanage.</td>
+                                                    <td>Bottleneck for approvals. Does work themselves instead of
+                                                        delegating.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Self-Awareness</td>
+                                                    <td>Seeks feedback. Admits mistakes. Continuously improves own
+                                                        leadership.</td>
+                                                    <td>Defensive when challenged. Never wrong. Doesn't adapt.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="callout info"><span class="callout-icon">📊</span><span><strong>How to
+                                                use this model practically:</strong><br />1. <strong>Upward feedback
+                                                survey:</strong> Create a 7-question survey (one per dimension) with a
+                                            1–5 rating scale. Send anonymously to each manager's direct reports
+                                            quarterly.<br />2. <strong>HRBP coaching:</strong> In your 1:1s with
+                                            managers, pick 1–2 dimensions to discuss each session. Use the "Observable
+                                            Behaviors" column as a checklist.<br />3. <strong>Calibration:</strong>
+                                            During talent reviews, plot each manager on a simple heatmap
+                                            (green/amber/red) across the 7 dimensions. Identify patterns and plan
+                                            targeted interventions.<br />4. <strong>Development plans:</strong> For
+                                            managers flagged with 2+ red dimensions, create a 90-day manager development
+                                            plan with specific actions per dimension.</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">1:1
+                                Meeting Template for Managers <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <p><strong>Frequency:</strong> Weekly or bi-weekly, 30 minutes minimum</p>
+                                    <p><strong>Structure:</strong></p>
+                                    <p>1. <strong>Check-in (5 min):</strong> "How are you doing — really?" / "What's on
+                                        your mind?"<br />
+                                        2. <strong>Progress & Priorities (10 min):</strong> "What went well this week?"
+                                        / "Where are you stuck?" / "What help do you need from me?"<br />
+                                        3. <strong>Development (10 min):</strong> "What skill are you working on?" /
+                                        "Any feedback for me?" / "What's one thing you'd like to try differently?"<br />
+                                        4. <strong>Wrap-up (5 min):</strong> "What are your top 3 priorities for next
+                                        week?" / "Anything else I should know?"</p>
+                                    <p><strong>Rules:</strong></p>
+                                    <p>• This is the employee's meeting, not the manager's<br />• Never cancel —
+                                        reschedule if needed<br />• Don't turn it into a status update — that's what
+                                        Slack/email is for<br />• Take notes and follow through on commitments<br />•
+                                        End with something positive</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="inline-disclaimer">Manager enablement is an ongoing process. These frameworks are
+                            starting points — adapt to your organisation's culture.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <!--  SECTION 2 — EMPLOYEE ENGAGEMENT          -->
+                <!-- ═══════════════════════════════════════════ -->
+                <div class="section" id="engagement">
+                    <div class="section-header">
+                        <div class="section-icon">🎯</div>
+                        <h2>Employee Engagement Activities</h2>
+                    </div>
+                    <p class="section-purpose">Practical, implementable activities to boost morale, build culture, and
+                        strengthen team bonds — categorised by effort and frequency.</p>
+                    <div class="section-body">
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">⚡</span> Quick Wins — Low Cost, High Impact</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Activity</th>
+                                            <th>How It Works</th>
+                                            <th>Frequency</th>
+                                            <th>Cost</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Spot Recognition</td>
+                                            <td>On-the-spot verbal appreciation in meetings or via group chat when
+                                                someone does great work. Name the specific action.</td>
+                                            <td>Ongoing</td>
+                                            <td><span class="tag success">Free</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thank You Notes</td>
+                                            <td>Handwritten or email notes from managers recognising specific
+                                                contributions. More personal than generic "good job".</td>
+                                            <td>Weekly</td>
+                                            <td><span class="tag success">Free</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Monday Motivation</td>
+                                            <td>Start the week with a team huddle — share wins from last week, one
+                                                learning, and focus for the week.</td>
+                                            <td>Weekly</td>
+                                            <td><span class="tag success">Free</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Birthday & Work Anniversary Celebration</td>
+                                            <td>Company-wide announcement, card signed by team, small treat. Acknowledge
+                                                the person, not just the date.</td>
+                                            <td>As occurs</td>
+                                            <td><span class="tag gold">Minimal</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lunch Roulette</td>
+                                            <td>Random cross-department lunch pairing. Breaks silos and builds informal
+                                                relationships.</td>
+                                            <td>Monthly</td>
+                                            <td><span class="tag gold">Minimal</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Show & Tell Fridays</td>
+                                            <td>One person shares a hobby, skill, or passion project with the team. 15
+                                                minutes. Builds personal connections.</td>
+                                            <td>Bi-weekly</td>
+                                            <td><span class="tag success">Free</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Walking Meetings</td>
+                                            <td>Replace seated 1:1s with walking meetings. Better conversations, better
+                                                health.</td>
+                                            <td>Ongoing</td>
+                                            <td><span class="tag success">Free</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Wall of Fame / Kudos Board</td>
+                                            <td>Physical or digital board where anyone can post appreciation for
+                                                colleagues.</td>
+                                            <td>Always on</td>
+                                            <td><span class="tag success">Free</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🏆</span> Structured Programs — Medium Effort</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Activity</th>
+                                            <th>How It Works</th>
+                                            <th>Frequency</th>
+                                            <th>Impact Area</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Employee of the Month</td>
+                                            <td>Peer-nominated, committee-selected. Publicly recognised with certificate
+                                                and small reward. Focus on values-driven behaviours, not just output.
+                                            </td>
+                                            <td>Monthly</td>
+                                            <td>Recognition</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mentorship Program</td>
+                                            <td>Pair senior employees with newer members. Structured with goals,
+                                                check-in cadence, and 3–6 month duration.</td>
+                                            <td>Quarterly cohorts</td>
+                                            <td>Growth</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Skill Swap Sessions</td>
+                                            <td>Employees teach each other skills — Excel, public speaking, cooking,
+                                                photography. 30-minute sessions.</td>
+                                            <td>Monthly</td>
+                                            <td>Learning</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Innovation Time / 10% Time</td>
+                                            <td>Allow employees dedicated time (half-day per month) to work on passion
+                                                projects related to the business.</td>
+                                            <td>Monthly</td>
+                                            <td>Innovation</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Team Challenges</td>
+                                            <td>Steps challenge, reading challenge, sustainability goals — with
+                                                leaderboard and small prizes.</td>
+                                            <td>Quarterly</td>
+                                            <td>Wellness / Fun</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Town Halls with Open Q&A</td>
+                                            <td>Monthly all-hands where leadership shares updates transparently and
+                                                answers anonymous questions.</td>
+                                            <td>Monthly</td>
+                                            <td>Trust / Transparency</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CSR / Volunteering Days</td>
+                                            <td>Organised team volunteering — beach cleanup, NGO support, school visits.
+                                                Paid time off for volunteering.</td>
+                                            <td>Quarterly</td>
+                                            <td>Purpose</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hackathons</td>
+                                            <td>24-48 hour cross-functional problem-solving events. Prizes for best
+                                                ideas. Fun, high-energy format.</td>
+                                            <td>Semi-annually</td>
+                                            <td>Innovation / Team</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🎉</span> Annual / Big-Ticket Activities</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Activity</th>
+                                            <th>Description</th>
+                                            <th>Tips</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Annual Awards Ceremony</td>
+                                            <td>Formal recognition event celebrating top performers, long-service
+                                                milestones, and team achievements.</td>
+                                            <td>Include fun categories (Best Memer, Most Helpful). Make it inclusive.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Family Day</td>
+                                            <td>Bring families to the workplace or an outing. Humanises the workplace
+                                                and builds loyalty.</td>
+                                            <td>Plan kid-friendly activities. Include remote workers.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Team Offsites / Retreats</td>
+                                            <td>Off-campus team building with strategic planning, fun activities, and
+                                                bonding time.</td>
+                                            <td>Balance fun and work. Don't overpack the schedule.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Festival Celebrations</td>
+                                            <td>Celebrate Diwali, Christmas, Ganesh Chaturthi, Eid, etc. at the
+                                                workplace with decorations, food, activities.</td>
+                                            <td>Be culturally inclusive. Rotate planning responsibilities.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sports Tournament</td>
+                                            <td>Inter-department cricket, football, carrom, chess tournament.</td>
+                                            <td>Include non-athletic options (chess, quiz). Celebrate participation.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Wellness Week</td>
+                                            <td>Dedicated week of health check-ups, yoga sessions, mental health
+                                                awareness, nutrition workshops.</td>
+                                            <td>Partner with local health providers. Normalise mental health
+                                                conversations.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fun Fridays / Theme Days</td>
+                                            <td>Casual dress codes, themed potlucks, game corners, movie screenings.
+                                            </td>
+                                            <td>Let teams take turns planning. Keep it voluntary.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger"
+                                onclick="toggleAccordion(this)">Employee Engagement Survey — Sample Questions <span
+                                    class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <p><strong>Scale: 1 (Strongly Disagree) to 5 (Strongly Agree)</strong></p>
+                                    <p>1. I feel valued for the work I do.<br />2. My manager regularly provides
+                                        constructive feedback.<br />3. I understand how my work contributes to the
+                                        organisation's goals.<br />4. I have the tools and resources to do my job
+                                        effectively.<br />5. I see opportunities for growth and career development
+                                        here.<br />6. My ideas and opinions are heard and considered.<br />7. I would
+                                        recommend this organisation as a great place to work.<br />8. I feel comfortable
+                                        raising concerns without fear of consequences.<br />9. The organisation's values
+                                        align with my personal values.<br />10. I feel a sense of belonging at this
+                                        workplace.<br />11. Work-life balance is supported and respected here.<br />12.
+                                        I receive adequate recognition for my contributions.</p>
+                                    <p><strong>Open-ended:</strong><br />• What is one thing that would make this a
+                                        better workplace?<br />• What should the organisation stop doing?<br />• What
+                                        should the organisation start doing?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="inline-disclaimer">Engagement activities should be voluntary and inclusive. Adapt to
+                            your organisation's culture and budget.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <!--  SECTION 3 — RETENTION STRATEGIES          -->
+                <!-- ═══════════════════════════════════════════ -->
+                <div class="section" id="retention">
+                    <div class="section-header">
+                        <div class="section-icon">🔗</div>
+                        <h2>Employee Retention Strategies</h2>
+                    </div>
+                    <p class="section-purpose">Proven strategies to reduce attrition — from zero-cost culture changes to
+                        structured programs. Prioritised by impact and cost-effectiveness.</p>
+                    <div class="section-body">
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🎯</span> Top 10 Zero-Cost Retention Moves</h3>
+                            <div class="flow-steps">
+                                <div class="flow-step">
+                                    <div class="step-dot">1</div>
+                                    <div class="step-content">
+                                        <h4>Meaningful 1:1 Conversations</h4>
+                                        <p>Weekly or bi-weekly 30-minute conversations between manager and direct
+                                            report. Not status updates — focus on growth, blockers, career aspirations,
+                                            and well-being. The #1 predictor of retention is the manager relationship.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">2</div>
+                                    <div class="step-content">
+                                        <h4>Stay Interviews (Not Just Exit Interviews)</h4>
+                                        <p>Proactively ask current employees: "What keeps you here? What might make you
+                                            leave? What would you change?" Do this annually with your best performers —
+                                            don't wait until they resign.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">3</div>
+                                    <div class="step-content">
+                                        <h4>Career Pathing Conversations</h4>
+                                        <p>Show employees where they can go. Map out 2–3 possible growth paths within
+                                            the organisation. Even if promotions aren't immediate, the visibility of a
+                                            path makes people stay.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">4</div>
+                                    <div class="step-content">
+                                        <h4>Public & Specific Recognition</h4>
+                                        <p>Recognise in team meetings, emails, or internal platforms — call out the
+                                            specific action, not just "good job." People who feel genuinely appreciated
+                                            are 3x less likely to leave.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">5</div>
+                                    <div class="step-content">
+                                        <h4>Autonomy & Ownership</h4>
+                                        <p>Trust people with decisions. Avoid micromanagement. Let employees own
+                                            projects end-to-end. Autonomy is one of the strongest intrinsic motivators.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">6</div>
+                                    <div class="step-content">
+                                        <h4>Flexibility Where Possible</h4>
+                                        <p>Even small flexibilities matter — flexible start times, WFH for personal
+                                            needs, compressed work weeks. Flexibility signals trust and respect for life
+                                            outside work.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">7</div>
+                                    <div class="step-content">
+                                        <h4>Cross-Functional Exposure</h4>
+                                        <p>Assign people to cross-department projects, committees, or improvement
+                                            initiatives. Breaks monotony, builds new skills, and creates organisational
+                                            stickiness.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">8</div>
+                                    <div class="step-content">
+                                        <h4>Transparent Communication</h4>
+                                        <p>Share company direction, challenges, and decisions openly. People leave when
+                                            they feel out of the loop. Regular town halls, open-door policy, and candid
+                                            updates build trust.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">9</div>
+                                    <div class="step-content">
+                                        <h4>Onboarding That Doesn't End at Week 1</h4>
+                                        <p>Extend onboarding to 90 days with structured check-ins. Assign a buddy. 20%
+                                            of turnover happens in the first 45 days — invest in the first 90 days.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">10</div>
+                                    <div class="step-content">
+                                        <h4>Fix Toxic Managers Before Anything Else</h4>
+                                        <p>"People don't leave companies, they leave managers." Invest in manager
+                                            training, upward feedback mechanisms, and don't tolerate brilliance without
+                                            empathy in leadership.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">💡</span> Retention Framework — The 5 Pillars</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Pillar</th>
+                                            <th>What It Means</th>
+                                            <th>Key Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>1. Compensation & Benefits</strong></td>
+                                            <td>Fair, competitive, and transparent pay</td>
+                                            <td>Annual market benchmarking. Pay equity audits. Clear compensation
+                                                philosophy shared with employees.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2. Growth & Development</strong></td>
+                                            <td>Learning opportunities and career progression</td>
+                                            <td>Individual Development Plans (IDP). Training budget. Internal mobility
+                                                programs. Mentorship.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>3. Culture & Belonging</strong></td>
+                                            <td>Inclusive, respectful, psychologically safe environment</td>
+                                            <td>D&I initiatives. Zero-tolerance for toxicity. Celebrate diversity. Team
+                                                rituals.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>4. Manager Quality</strong></td>
+                                            <td>Supportive, competent, empathetic leadership</td>
+                                            <td>Manager 360° feedback. People management training. Upward feedback
+                                                channels.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>5. Work-Life Harmony</strong></td>
+                                            <td>Sustainable workload and flexibility</td>
+                                            <td>Realistic deadlines. After-hours email boundaries. Wellness programs.
+                                                Mental health support.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger"
+                                onclick="toggleAccordion(this)">Attrition Analysis Framework <span
+                                    class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <p><strong>Step 1: Measure It</strong></p>
+                                    <p>• Monthly attrition rate = (Separations in month ÷ Average headcount) ×
+                                        100<br />• Annual attrition rate = (Total separations in 12 months ÷ Average
+                                        headcount) × 100<br />• Track voluntary vs involuntary separately. Voluntary is
+                                        the metric that reveals retention health.<br />• Track by department, manager,
+                                        tenure band, and grade.</p>
+                                    <p><strong>Step 2: Understand It</strong></p>
+                                    <p>• Exit interview data (quantify top 5 reasons)<br />• Stay interview
+                                        insights<br />• Regrettable vs non-regrettable attrition<br />• <strong>90-day
+                                            attrition</strong> — high early attrition = onboarding problem<br />•
+                                        <strong>1-year attrition</strong> — indicates manager or role-fit issues<br />•
+                                        <strong>3-year attrition</strong> — indicates growth/stagnation issues
+                                    </p>
+                                    <p><strong>Step 3: Act On It</strong></p>
+                                    <p>• Create an attrition heatmap by manager/department<br />• Initiate targeted
+                                        retention actions for high-risk segments<br />• Set retention targets by team
+                                        and tie to manager KPIs<br />• Review quarterly, not just annually</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger"
+                                onclick="toggleAccordion(this)">Retention Conversation Starters — For Managers <span
+                                    class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <p><strong>Stay Interview Questions:</strong></p>
+                                    <p>1. What do you look forward to when you come to work each day?<br />2. What are
+                                        you learning here? What do you want to learn?<br />3. Why do you stay at this
+                                        organisation?<br />4. When was the last time you thought about leaving? What
+                                        prompted it?<br />5. What can I do more of, or less of, as your manager?<br />6.
+                                        Do you feel your talents are being fully utilised?<br />7. What would make your
+                                        work more satisfying?<br />8. Is there anything about the culture you'd want to
+                                        change?</p>
+                                    <p><strong>When someone resigns — the first 24 hours matter:</strong></p>
+                                    <p>1. Thank them for informing you<br />2. Ask if there's anything that would change
+                                        their mind (listen, don't react defensively)<br />3. If the employee is a high
+                                        performer, explore genuinely (not just a panic counter-offer)<br />4. If they've
+                                        decided, respect the decision and focus on a smooth transition<br />5. Inform HR
+                                        same day — the clock starts on handover and F&F planning</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="inline-disclaimer">Retention strategies should be authentic. Hollow gestures can
+                            backfire. Focus on systemic changes, not one-off fixes.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <!--  SECTION 4 — HR METRICS & WORKFORCE PLAN   -->
+                <!-- ═══════════════════════════════════════════ -->
+                <div class="section" id="metrics">
+                    <div class="section-header">
+                        <div class="section-icon">📊</div>
+                        <h2>HR Metrics & Workforce Planning</h2>
+                    </div>
+                    <p class="section-purpose">Data-driven HR decision-making — comprehensive metrics reference,
+                        workforce planning frameworks, headcount budgeting, and succession planning tools.</p>
+                    <div class="section-body">
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📈</span> Core HR Metrics — Complete Reference</h3>
+                            <div class="tab-nav">
+                                <button class="tab-btn active" data-tab="tab-recruit-metrics">Recruitment</button>
+                                <button class="tab-btn" data-tab="tab-retention-metrics">Retention</button>
+                                <button class="tab-btn" data-tab="tab-perf-metrics">Performance</button>
+                                <button class="tab-btn" data-tab="tab-comp-metrics">Compensation</button>
+                                <button class="tab-btn" data-tab="tab-ld-metrics">L&D</button>
+                            </div>
+                            <div class="tab-panel active" id="tab-recruit-metrics">
+                                <div class="table-wrap">
+                                    <table class="ref-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metric</th>
+                                                <th>Formula</th>
+                                                <th>Benchmark</th>
+                                                <th>Why It Matters</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Time to Fill</td>
+                                                <td>Date of offer acceptance − Date of requisition approval</td>
+                                                <td>30–45 days</td>
+                                                <td>Measures hiring efficiency. Long TTF = lost productivity.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Time to Hire</td>
+                                                <td>Date of offer acceptance − Date candidate entered pipeline</td>
+                                                <td>14–28 days</td>
+                                                <td>Measures candidate experience speed.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cost per Hire</td>
+                                                <td>(Internal recruiting costs + External recruiting costs) ÷ Number of
+                                                    hires</td>
+                                                <td>₹15,000–₹1,00,000+</td>
+                                                <td>Budget planning and sourcing channel ROI.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Quality of Hire</td>
+                                                <td>Average performance rating of new hires at 12 months</td>
+                                                <td>> 3.5/5.0</td>
+                                                <td>Validation of sourcing and selection process.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Offer Acceptance Rate</td>
+                                                <td>(Offers accepted ÷ Offers extended) × 100</td>
+                                                <td>> 85%</td>
+                                                <td>Low rate = comp issues, poor candidate experience, or long process.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Source of Hire</td>
+                                                <td>% of hires by channel (referral, job board, agency, internal)</td>
+                                                <td>Varies</td>
+                                                <td>Identifies most effective and cost-efficient channels.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Interview-to-Offer Ratio</td>
+                                                <td>Number of interviews ÷ Number of offers</td>
+                                                <td>3:1 to 5:1</td>
+                                                <td>Higher ratio may indicate unclear JDs or misaligned screening.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab-retention-metrics">
+                                <div class="table-wrap">
+                                    <table class="ref-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metric</th>
+                                                <th>Formula</th>
+                                                <th>Benchmark</th>
+                                                <th>Why It Matters</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Voluntary Attrition</td>
+                                                <td>(Voluntary exits ÷ Avg. headcount) × 100</td>
+                                                <td>
+                                                    < 15% (IT), < 10% (Mfg)</td>
+                                                <td>Core retention health indicator.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Regrettable Attrition</td>
+                                                <td>(High performers who left voluntarily ÷ Total voluntary exits) × 100
+                                                </td>
+                                                <td>
+                                                    < 30% of voluntary</td>
+                                                <td>Losing your best people is the real problem.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>90-Day Attrition</td>
+                                                <td>(Exits within 90 days ÷ New hires in period) × 100</td>
+                                                <td>
+                                                    < 5%</td>
+                                                <td>High number = onboarding or hiring mismatch.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tenure Distribution</td>
+                                                <td>% of workforce by tenure bands (0–1yr, 1–3yr, 3–5yr, 5+yr)</td>
+                                                <td>Balanced distribution</td>
+                                                <td>Skewed to < 1yr=churn problem. Skewed to 5+yr=stagnation risk.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Manager Attrition</td>
+                                                <td>Attrition rate segmented by reporting manager</td>
+                                                <td>Flag managers > 2x avg</td>
+                                                <td>Identifies toxic or ineffective managers.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Absenteeism Rate</td>
+                                                <td>(Unplanned absent days ÷ Total working days) × 100</td>
+                                                <td>
+                                                    < 3%</td>
+                                                <td>Leading indicator of disengagement.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab-perf-metrics">
+                                <div class="table-wrap">
+                                    <table class="ref-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metric</th>
+                                                <th>Formula</th>
+                                                <th>Benchmark</th>
+                                                <th>Why It Matters</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Performance Rating Distribution</td>
+                                                <td>% of employees per rating category</td>
+                                                <td>Bell curve or calibrated</td>
+                                                <td>Flat distribution may indicate rating inflation.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Goal Completion Rate</td>
+                                                <td>(Completed goals ÷ Set goals) × 100</td>
+                                                <td>> 75%</td>
+                                                <td>Measures goal-setting quality and execution.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>PIP Conversion Rate</td>
+                                                <td>(PIP employees who improved ÷ Total PIP) × 100</td>
+                                                <td>40–60%</td>
+                                                <td>Low rate = PIP is being used to exit, not improve.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Promotion Rate</td>
+                                                <td>(Promotions ÷ Total headcount) × 100</td>
+                                                <td>8–12% annually</td>
+                                                <td>Low rate = stagnation. Very high rate = title inflation.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Internal Mobility Rate</td>
+                                                <td>(Internal transfers ÷ Total openings filled) × 100</td>
+                                                <td>> 25%</td>
+                                                <td>Measures career growth opportunities within the org.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab-comp-metrics">
+                                <div class="table-wrap">
+                                    <table class="ref-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metric</th>
+                                                <th>Formula</th>
+                                                <th>Benchmark</th>
+                                                <th>Why It Matters</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Compa-Ratio</td>
+                                                <td>(Employee salary ÷ Market midpoint for role) × 100</td>
+                                                <td>80–120%</td>
+                                                <td>Measures pay competitiveness vs market.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Compensation Cost Ratio</td>
+                                                <td>(Total compensation ÷ Revenue) × 100</td>
+                                                <td>20–40% (industry-dependent)</td>
+                                                <td>Company-level cost efficiency metric.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pay Equity Gap</td>
+                                                <td>Avg pay difference between demographics for same role/level</td>
+                                                <td>
+                                                    < 5%</td>
+                                                <td>Legal risk and fairness indicator.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Benefits Utilisation</td>
+                                                <td>(Employees using benefit ÷ Eligible employees) × 100</td>
+                                                <td>> 60%</td>
+                                                <td>Low utilisation = poor communication or irrelevant benefits.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Increment Budget Utilisation</td>
+                                                <td>(Actual increment pool spent ÷ Allocated increment budget) × 100
+                                                </td>
+                                                <td>95–100%</td>
+                                                <td>Under-utilisation means managers aren't rewarding adequately.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tab-ld-metrics">
+                                <div class="table-wrap">
+                                    <table class="ref-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Metric</th>
+                                                <th>Formula</th>
+                                                <th>Benchmark</th>
+                                                <th>Why It Matters</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Training Hours per Employee</td>
+                                                <td>Total training hours ÷ Headcount</td>
+                                                <td>> 40 hrs/year</td>
+                                                <td>Measures investment in development.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Training Cost per Employee</td>
+                                                <td>Total L&D spend ÷ Headcount</td>
+                                                <td>₹5,000–₹50,000/yr</td>
+                                                <td>Budget allocation and ROI tracking.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Training Completion Rate</td>
+                                                <td>(Completed enrollments ÷ Total enrollments) × 100</td>
+                                                <td>> 80%</td>
+                                                <td>Low rate = irrelevant content or time pressure.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Skill Gap Index</td>
+                                                <td>Assessed skill level vs Required skill level (average gap)</td>
+                                                <td>
+                                                    < 1.0 on 5-point scale</td>
+                                                <td>Identifies critical capability gaps.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Post-Training Performance Change</td>
+                                                <td>Performance rating change 6 months after training</td>
+                                                <td>Positive delta</td>
+                                                <td>Measures actual training impact (Level 4 Kirkpatrick).</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🗓️</span> Workforce Planning Framework</h3>
+                            <div class="flow-steps">
+                                <div class="flow-step">
+                                    <div class="step-dot">1</div>
+                                    <div class="step-content">
+                                        <h4>Understand Business Strategy</h4>
+                                        <p>Where is the business heading in 1–3 years? What new markets, products, or
+                                            geographies are planned? What capabilities will be needed that don't exist
+                                            today?</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">2</div>
+                                    <div class="step-content">
+                                        <h4>Analyse Current Workforce</h4>
+                                        <p>Create a snapshot: headcount by function, level, tenure, performance, and
+                                            critical skills. Identify single points of failure (knowledge concentrated
+                                            in one person). Map skills inventory vs future needs.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">3</div>
+                                    <div class="step-content">
+                                        <h4>Forecast Future Demand</h4>
+                                        <p>Based on business growth, project headcount needs by function and role.
+                                            Factor in: attrition projections, retirement forecasts, automation impact,
+                                            and seasonal demand. Use scenario planning (best case, base case, worst
+                                            case).</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">4</div>
+                                    <div class="step-content">
+                                        <h4>Identify Gaps</h4>
+                                        <p>Gap = Future demand − (Current supply − Projected attrition). Categorise
+                                            gaps: headcount gaps (need more people), skill gaps (need different
+                                            capabilities), leadership gaps (need stronger pipeline).</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">5</div>
+                                    <div class="step-content">
+                                        <h4>Build the Action Plan</h4>
+                                        <p>For each gap, choose: Build (train existing employees), Buy (hire
+                                            externally), Borrow (contractors/gig workers), Bridge (automate or
+                                            redistribute). Create timeline and budget for each action.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">6</div>
+                                    <div class="step-content">
+                                        <h4>Monitor & Recalibrate</h4>
+                                        <p>Review workforce plan quarterly. Track leading indicators (pipeline health,
+                                            offer acceptance, training completion). Adjust based on actual vs projected
+                                            attrition and business changes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger"
+                                onclick="toggleAccordion(this)">Headcount Budgeting Template <span
+                                    class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="table-wrap">
+                                        <table class="ref-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Input</th>
+                                                    <th>How to Calculate</th>
+                                                    <th>Purpose</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Current Headcount</td>
+                                                    <td>Active employees as of planning date</td>
+                                                    <td>Starting baseline</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Projected Attrition</td>
+                                                    <td>Current headcount × Historical attrition rate</td>
+                                                    <td>Plan for replacements</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Business Growth Additions</td>
+                                                    <td>Based on revenue targets, OKRs, new projects</td>
+                                                    <td>Net new positions</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Backfill Requirement</td>
+                                                    <td>Projected attrition × Backfill decision (100% or partial)</td>
+                                                    <td>Not all exits need backfilling</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total Hiring Plan</td>
+                                                    <td>Growth additions + Backfills</td>
+                                                    <td>Total hires planned</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cost per Hire (Avg)</td>
+                                                    <td>Historical data or market benchmark</td>
+                                                    <td>Recruitment budget</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Avg CTC for New Hires</td>
+                                                    <td>By level and function</td>
+                                                    <td>Compensation budget impact</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Planned Exits</td>
+                                                    <td>PIPs expected to culminate + Voluntary exits</td>
+                                                    <td>Reduction planning</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Year-End Headcount Target</td>
+                                                    <td>Current + Hires − Exits</td>
+                                                    <td>Final workforce plan number</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger"
+                                onclick="toggleAccordion(this)">Succession Planning — 9-Box Grid Guide <span
+                                    class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <p>The <strong>9-Box Grid</strong> maps employees across two dimensions:
+                                        <strong>Performance (X-axis)</strong> and <strong>Potential (Y-axis)</strong>.
+                                    </p>
+                                    <div class="table-wrap">
+                                        <table class="ref-table">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Low Performance</th>
+                                                    <th>Moderate Performance</th>
+                                                    <th>High Performance</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>High Potential</strong></td>
+                                                    <td><strong>Enigma</strong> — High potential but not yet delivering.
+                                                        Investigate: wrong role? Wrong manager? Personal issues?</td>
+                                                    <td><strong>Growth Employee</strong> — Strong potential, developing
+                                                        performance. Invest in coaching, stretch assignments.</td>
+                                                    <td><strong>Star / Future Leader</strong> — Top talent. Accelerate
+                                                        development. Retain at all costs. Succession candidate for
+                                                        critical roles.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Moderate Potential</strong></td>
+                                                    <td><strong>Underperformer</strong> — May need role change, PIP, or
+                                                        managed exit.</td>
+                                                    <td><strong>Core Performer</strong> — Backbone of the organisation.
+                                                        Recognise, develop, and don't neglect.</td>
+                                                    <td><strong>High Performer</strong> — Strong current contributor.
+                                                        May have a ceiling. Expand scope, recognise, and develop.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Low Potential</strong></td>
+                                                    <td><strong>Risk</strong> — Serious concern. Exit planning or
+                                                        significant intervention needed.</td>
+                                                    <td><strong>Average Performer</strong> — Meets expectations, limited
+                                                        growth. Maintain and provide stability.</td>
+                                                    <td><strong>Trusted Professional</strong> — Strong execution,
+                                                        limited upward mobility. Value their expertise. Create lateral
+                                                        growth.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p><strong>How to use it:</strong></p>
+                                    <p>• Conduct talent reviews with managers quarterly or bi-annually<br />• Use the
+                                        9-box to identify succession candidates for critical roles<br />• Differentiate
+                                        investment: accelerate for Stars, develop for Growth, manage out Risks<br />•
+                                        Never share the actual grid placement with employees — this is a planning tool,
+                                        not a label</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">HR
+                                Dashboard — How to Build One <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <p><strong>Step 1: Choose your metrics wisely</strong></p>
+                                    <p>• Don't track everything — track what drives decisions<br />• Start with 6–8 core
+                                        metrics, not 30<br />• Ask: "If this metric changes, would leadership take
+                                        action?" If not, drop it.</p>
+                                    <p><strong>Step 2: Structure by audience</strong></p>
+                                    <p>• <strong>CEO/Board level:</strong> Revenue per employee, total workforce cost %,
+                                        attrition rate, engagement score<br />• <strong>Business leaders:</strong> Team
+                                        attrition, hiring pipeline status, performance distribution, open positions
+                                        aging<br />• <strong>HR team:</strong> All operational metrics — TTF, cost per
+                                        hire, training completion, compliance status</p>
+                                    <p><strong>Step 3: Tools you can use</strong></p>
+                                    <p>• <strong>Free/Low cost:</strong> Google Sheets + Google Data Studio, Excel +
+                                        Power BI (free desktop), Notion dashboards<br />• <strong>HR-specific:</strong>
+                                        greytHR, Keka, Zoho People (many have built-in analytics)<br />•
+                                        <strong>Enterprise:</strong> SAP SuccessFactors, Workday, Darwinbox
+                                    </p>
+                                    <p><strong>Step 4: Update cadence</strong></p>
+                                    <p>• Attrition, hiring: Monthly<br />• Engagement, performance: Quarterly<br />•
+                                        Compensation, workforce plan: Semi-annually<br />• Always review before
+                                        leadership meetings</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="inline-disclaimer">Metrics are tools for decision-making, not targets to game. Use
+                            them to ask better questions, not to punish deviations.</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <footer class="global-footer" id="globalFooter"></footer>
+        </main>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Top">↑</button>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>

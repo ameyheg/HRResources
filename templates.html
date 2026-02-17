@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR Templates — HR Resources</title>
+    <meta name="description"
+        content="20+ indicative HR letter and form templates for Indian organisations. Appointment, separation, conduct, admin, and statutory formats." />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body data-page="templates">
+    <div class="reading-progress" id="readingProgress"></div>
+    <canvas id="particleCanvas"></canvas>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="app-layout">
+        <aside class="sidebar" id="sidebar"></aside>
+        <main class="main-content">
+            <div class="page-header">
+                <div class="page-header-inner">
+                    <h1>📄 HR Templates</h1>
+                    <p>20+ indicative letter and form formats, organised by category. Adapt as per organisational
+                        policy.</p>
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="search-bar">
+                    <div class="search-input-wrap"><span class="search-icon">🔍</span><input type="text"
+                            class="search-input" id="searchInput" placeholder="Search templates…" /><span
+                            class="search-kbd">Ctrl+K</span></div>
+                    <div class="search-results-info" id="searchInfo"></div>
+                </div>
+
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="tab-employment">Employment (6)</button>
+                    <button class="tab-btn" data-tab="tab-separation">Separation (4)</button>
+                    <button class="tab-btn" data-tab="tab-conduct">Conduct (3)</button>
+                    <button class="tab-btn" data-tab="tab-admin">Administrative (5)</button>
+                    <button class="tab-btn" data-tab="tab-statutory">Statutory (3)</button>
+                </div>
+
+                <!-- ═══ EMPLOYMENT TAB ═══ -->
+                <div class="tab-panel active" id="tab-employment">
+                    <div class="section revealed" id="s-appt">
+                        <div class="section-body">
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Appointment Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Appointment Letter</span>
+                                            <p><strong>[Company Name]</strong> | [Company Address]</p>
+                                            <p>Date: [DD/MM/YYYY]</p>
+                                            <p>To, [Employee Name], [Employee Address]</p>
+                                            <p><strong>Subject: Appointment Letter</strong></p>
+                                            <p>Dear [Employee Name],</p>
+                                            <p>With reference to your application and subsequent discussions, we are
+                                                pleased to appoint you as <span class="placeholder">[Designation]</span>
+                                                in the <span class="placeholder">[Department]</span> department,
+                                                effective <span class="placeholder">[Date of Joining]</span>.</p>
+                                            <p><strong>1. Compensation:</strong> Your annual CTC will be <span
+                                                    class="placeholder">[Amount in words & figures]</span>, subject to
+                                                applicable deductions. A detailed breakup is annexed.</p>
+                                            <p><strong>2. Probation Period:</strong> <span
+                                                    class="placeholder">[Duration, e.g. 6 months]</span>, which may be
+                                                extended at the discretion of the organisation.</p>
+                                            <p><strong>3. Notice Period:</strong> During probation: <span
+                                                    class="placeholder">[e.g. 30 days]</span>. Post confirmation: <span
+                                                    class="placeholder">[e.g. 60 days]</span>.</p>
+                                            <p><strong>4. Place of Work:</strong> <span
+                                                    class="placeholder">[Location]</span>. This may change based on
+                                                organisational requirements.</p>
+                                            <p><strong>5. Working Hours:</strong> <span class="placeholder">[e.g. 9:30
+                                                    AM to 6:30 PM, Monday to Friday]</span>.</p>
+                                            <p><strong>6. Reporting:</strong> You will report to <span
+                                                    class="placeholder">[Reporting Manager Name, Designation]</span>.
+                                            </p>
+                                            <p><strong>7. Confidentiality:</strong> You are expected to maintain
+                                                confidentiality of all proprietary and business information.</p>
+                                            <p><strong>8. Code of Conduct:</strong> You are expected to adhere to the
+                                                organisation's policies as communicated from time to time.</p>
+                                            <p>Please sign and return a copy as acknowledgement of acceptance.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory Name]</span><br /><span
+                                                    class="placeholder">[Designation]</span></p>
+                                            <p><em>Employee Acceptance:</em> I accept the above terms. Name: ______
+                                                Signature: ______ Date: ______</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Confirmation Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Confirmation of Employment</span>
+                                            <p>Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span></p>
+                                            <p><strong>Subject: Confirmation of Employment</strong></p>
+                                            <p>Upon successful completion of your probation period, we are pleased to
+                                                confirm your employment as <span
+                                                    class="placeholder">[Designation]</span> in the <span
+                                                    class="placeholder">[Department]</span> department, effective <span
+                                                    class="placeholder">[Confirmation Date]</span>.</p>
+                                            <p>Your revised compensation, if any, is detailed in the annexed breakup.
+                                                All other terms and conditions of your appointment letter dated <span
+                                                    class="placeholder">[Appointment Date]</span> remain unchanged
+                                                unless communicated otherwise.</p>
+                                            <p>We appreciate your contributions and look forward to your continued
+                                                association.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Probation Extension Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Probation Extension</span>
+                                            <p>Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span></p>
+                                            <p><strong>Subject: Extension of Probation Period</strong></p>
+                                            <p>Your probation period, originally set to end on <span
+                                                    class="placeholder">[Original End Date]</span>, is being extended by
+                                                <span class="placeholder">[Duration, e.g. 3 months]</span> until <span
+                                                    class="placeholder">[New End Date]</span>.
+                                            </p>
+                                            <p><strong>Reason:</strong> <span class="placeholder">[e.g. Need for further
+                                                    evaluation of performance / specific areas requiring
+                                                    improvement]</span></p>
+                                            <p><strong>Areas for improvement:</strong></p>
+                                            <p>• <span class="placeholder">[Area 1]</span><br />• <span
+                                                    class="placeholder">[Area 2]</span></p>
+                                            <p>Your performance will be reviewed again at the end of the extended
+                                                period. All other terms of employment remain unchanged.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Increment / Salary Revision Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Salary Revision Letter</span>
+                                            <p>Date: [DD/MM/YYYY] | <strong>Confidential</strong></p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span></p>
+                                            <p><strong>Subject: Annual Compensation Revision — FY <span
+                                                        class="placeholder">[Year]</span></strong></p>
+                                            <p>In recognition of your performance and contributions, your compensation
+                                                has been revised effective <span class="placeholder">[Effective
+                                                    Date]</span>:</p>
+                                            <p><strong>Previous CTC:</strong> ₹ <span class="placeholder">[Old
+                                                    Amount]</span> per annum<br /><strong>Revised CTC:</strong> ₹ <span
+                                                    class="placeholder">[New Amount]</span> per
+                                                annum<br /><strong>Increment:</strong> <span class="placeholder">[% or
+                                                    Amount]</span></p>
+                                            <p>A detailed salary breakup is annexed. All other terms remain unchanged.
+                                            </p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Promotion Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Promotion Letter</span>
+                                            <p>Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span></p>
+                                            <p><strong>Subject: Promotion</strong></p>
+                                            <p>We are pleased to inform you that, based on your performance and
+                                                contributions, you have been promoted from <span
+                                                    class="placeholder">[Previous Designation]</span> to <span
+                                                    class="placeholder">[New Designation]</span>, effective <span
+                                                    class="placeholder">[Date]</span>.</p>
+                                            <p>You will now report to <span class="placeholder">[New Reporting
+                                                    Manager]</span>. Your revised compensation, reflecting this
+                                                promotion, is detailed in the annexed breakup.</p>
+                                            <p>Congratulations, and we look forward to your continued contributions.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Internship Offer Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Internship Offer</span>
+                                            <p>Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Intern Name]</span></p>
+                                            <p><strong>Subject: Internship Offer</strong></p>
+                                            <p>We are pleased to offer you an internship at <span
+                                                    class="placeholder">[Company Name]</span> with the following
+                                                details:</p>
+                                            <p><strong>Duration:</strong> <span class="placeholder">[Start Date]</span>
+                                                to <span class="placeholder">[End Date]</span> (<span
+                                                    class="placeholder">[X
+                                                    months]</span>)<br /><strong>Department:</strong> <span
+                                                    class="placeholder">[Department]</span><br /><strong>Reporting
+                                                    to:</strong> <span class="placeholder">[Supervisor
+                                                    Name]</span><br /><strong>Stipend:</strong> ₹ <span
+                                                    class="placeholder">[Amount]</span> per month (if
+                                                applicable)<br /><strong>Working Hours:</strong> <span
+                                                    class="placeholder">[Hours]</span></p>
+                                            <p>This internship does not create an obligation of permanent employment. An
+                                                internship completion certificate will be issued upon successful
+                                                completion.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="inline-disclaimer">All templates are indicative. Adapt as per organisational policy and
+                        applicable laws.</p>
+                </div>
+
+                <!-- ═══ SEPARATION TAB ═══ -->
+                <div class="tab-panel" id="tab-separation">
+                    <div class="section revealed" id="s-sep">
+                        <div class="section-body">
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Acceptance of Resignation <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Acceptance of Resignation</span>
+                                            <p>Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span></p>
+                                            <p><strong>Subject: Acceptance of Resignation</strong></p>
+                                            <p>We acknowledge receipt of your resignation letter dated <span
+                                                    class="placeholder">[Date]</span>. Your resignation is accepted, and
+                                                your last working day will be <span class="placeholder">[Last Working
+                                                    Date]</span>, following the notice period as per your terms of
+                                                employment.</p>
+                                            <p>During your notice period, you are expected to:<br />• Complete handover
+                                                of all responsibilities<br />• Return all company assets (laptop, ID
+                                                card, access cards, etc.)<br />• Obtain clearance from relevant
+                                                departments</p>
+                                            <p>Your full and final settlement will be processed within <span
+                                                    class="placeholder">[X days]</span> of your last working day, as per
+                                                company policy.</p>
+                                            <p>We wish you success in your future endeavours.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Experience / Relieving Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Experience &amp; Relieving Certificate</span>
+                                            <p><strong>[Company Name]</strong> | Ref: <span class="placeholder">[Ref
+                                                    No]</span> | Date: [DD/MM/YYYY]</p>
+                                            <p><strong>To Whom It May Concern</strong></p>
+                                            <p>This is to certify that <span class="placeholder">[Employee Name]</span>
+                                                was employed with [Company Name] as <span class="placeholder">[Last
+                                                    Designation Held]</span> in the <span
+                                                    class="placeholder">[Department]</span> department from <span
+                                                    class="placeholder">[Start Date]</span> to <span
+                                                    class="placeholder">[Last Working Date]</span>.</p>
+                                            <p>During this tenure, <span class="placeholder">[he/she/they]</span> was
+                                                responsible for <span class="placeholder">[brief description of key
+                                                    responsibilities]</span>.</p>
+                                            <p><span class="placeholder">[Employee Name]</span> has been relieved from
+                                                services effective <span class="placeholder">[Last Working Date]</span>.
+                                                All dues have been settled as per company policy.</p>
+                                            <p>We wish <span class="placeholder">[him/her/them]</span> success in future
+                                                endeavours.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span><br /><span
+                                                    class="placeholder">[Designation]</span><br /><em>(Company
+                                                    Seal)</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Full &amp; Final Settlement Statement <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">F&amp;F Settlement Statement</span>
+                                            <p><strong>Full &amp; Final Settlement — <span class="placeholder">[Employee
+                                                        Name]</span></strong></p>
+                                            <p>Employee ID: <span class="placeholder">[ID]</span> | Dept: <span
+                                                    class="placeholder">[Dept]</span> | DOJ: <span
+                                                    class="placeholder">[Date]</span> | LWD: <span
+                                                    class="placeholder">[Date]</span></p>
+                                            <p><strong>— Earnings —</strong><br />Salary for days worked in final month:
+                                                ₹ ______<br />Leave encashment (_____ days × ₹ _____): ₹
+                                                ______<br />Bonus / Ex-gratia (if applicable): ₹ ______<br />Gratuity
+                                                (if eligible): ₹ ______<br />Reimbursements pending: ₹
+                                                ______<br /><strong>Total Earnings: ₹ ______</strong></p>
+                                            <p><strong>— Deductions —</strong><br />Notice period recovery (if
+                                                applicable): ₹ ______<br />Income tax (TDS): ₹ ______<br />PF employee
+                                                share: ₹ ______<br />Loan / advance recovery: ₹ ______<br />Asset
+                                                recovery / damage (if any): ₹ ______<br /><strong>Total Deductions: ₹
+                                                    ______</strong></p>
+                                            <p><strong>Net Payable: ₹ ______</strong></p>
+                                            <p><em>Employee Acknowledgement:</em> I confirm receipt and accept full
+                                                &amp; final settlement.<br />Name: ______ Signature: ______ Date: ______
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Termination Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Termination of Employment</span>
+                                            <p><strong>Confidential</strong> | Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span></p>
+                                            <p><strong>Subject: Termination of Employment</strong></p>
+                                            <p>Further to <span class="placeholder">[reference to previous
+                                                    correspondence / inquiry / show cause proceedings]</span>, and after
+                                                due consideration, we regret to inform you that your employment with
+                                                [Company Name] stands terminated effective <span
+                                                    class="placeholder">[Date]</span>.</p>
+                                            <p><strong>Reason:</strong> <span class="placeholder">[Summary of reason —
+                                                    performance, misconduct, business restructuring, etc.]</span></p>
+                                            <p>Your full and final settlement will be processed as per company policy.
+                                                You are required to return all company property and complete the
+                                                clearance process.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                            <p><em>Note: This format is indicative. Termination processes commonly
+                                                    involve multiple steps and due process as per organisational
+                                                    policy.</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="inline-disclaimer">All templates are indicative. Adapt as per organisational policy and
+                        applicable laws.</p>
+                </div>
+
+                <!-- ═══ CONDUCT TAB ═══ -->
+                <div class="tab-panel" id="tab-conduct">
+                    <div class="section revealed" id="s-conduct">
+                        <div class="section-body">
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Warning Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Warning Letter</span>
+                                            <p><strong>Confidential</strong> | Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span>, <span
+                                                    class="placeholder">[Department]</span></p>
+                                            <p><strong>Subject: Warning Letter</strong></p>
+                                            <p>It has been brought to our attention that <span
+                                                    class="placeholder">[detailed description of issue/incident,
+                                                    including date(s), location, and relevant context]</span>.</p>
+                                            <p>This is not in alignment with the organisation's code of conduct / <span
+                                                    class="placeholder">[specific policy, e.g. attendance policy, IT
+                                                    usage policy]</span>.</p>
+                                            <p>You are issued this warning and advised to <span
+                                                    class="placeholder">[expected corrective action]</span>. Any
+                                                recurrence may lead to further action as per organisational policy.</p>
+                                            <p><em>This constitutes <span class="placeholder">[First / Second /
+                                                        Final]</span> warning.</em></p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                            <p><em>Employee Acknowledgement:</em> Name: ______ Signature: ______ Date:
+                                                ______</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Show Cause Notice <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Show Cause Notice</span>
+                                            <p><strong>Confidential</strong> | Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span></p>
+                                            <p><strong>Subject: Show Cause Notice</strong></p>
+                                            <p>It has been observed/reported that <span class="placeholder">[detailed
+                                                    description of the allegation or misconduct, with dates, witnesses
+                                                    if applicable]</span>.</p>
+                                            <p>The above, if established, constitutes a violation of <span
+                                                    class="placeholder">[specific policy/code of conduct clause]</span>.
+                                            </p>
+                                            <p>You are hereby directed to submit a written explanation within <span
+                                                    class="placeholder">[e.g. 7]</span> working days from the date of
+                                                receipt of this notice, explaining why appropriate action as per
+                                                organisational policy may not be taken against you.</p>
+                                            <p>Failure to respond within the stipulated time may result in a decision
+                                                being taken based on available information.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Suspension Letter (Pending Inquiry) <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Suspension Pending Inquiry</span>
+                                            <p><strong>Confidential</strong> | Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span></p>
+                                            <p><strong>Subject: Suspension Pending Inquiry</strong></p>
+                                            <p>In view of the allegations of <span class="placeholder">[nature of
+                                                    misconduct]</span>, and pending the outcome of an inquiry, you are
+                                                hereby placed under suspension effective <span
+                                                    class="placeholder">[Date]</span>.</p>
+                                            <p>During the period of suspension:<br />• You are not to attend the
+                                                workplace unless specifically directed<br />• You are to remain
+                                                available and reachable for the inquiry process<br />• Subsistence
+                                                allowance, if applicable, will be paid as per organisational policy</p>
+                                            <p>This suspension is a procedural step and does not presume findings
+                                                against you. You will be given full opportunity to present your case in
+                                                the inquiry.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="inline-disclaimer">All templates are indicative. Adapt as per organisational policy and
+                        applicable laws.</p>
+                </div>
+
+                <!-- ═══ ADMIN TAB ═══ -->
+                <div class="tab-panel" id="tab-admin">
+                    <div class="section revealed" id="s-admin">
+                        <div class="section-body">
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Transfer Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Transfer Letter</span>
+                                            <p>Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span></p>
+                                            <p><strong>Subject: Transfer</strong></p>
+                                            <p>You are being transferred from <span class="placeholder">[Current
+                                                    Location / Department]</span> to <span class="placeholder">[New
+                                                    Location / Department]</span>, effective <span
+                                                    class="placeholder">[Date]</span>.</p>
+                                            <p>You are to report to <span class="placeholder">[New Reporting
+                                                    Manager]</span>. <span class="placeholder">[Relocation support /
+                                                    allowances, if any]</span></p>
+                                            <p>All other terms of employment remain unchanged.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">No
+                                    Objection Certificate (NOC) <span class="acc-type">Template</span><span
+                                        class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">NOC</span>
+                                            <p><strong>[Company Name]</strong> | Date: [DD/MM/YYYY]</p>
+                                            <p><strong>No Objection Certificate</strong></p>
+                                            <p>[Company Name] has no objection to <span class="placeholder">[Employee
+                                                    Name]</span> (ID: <span class="placeholder">[ID]</span>), <span
+                                                    class="placeholder">[Designation]</span>, pursuing <span
+                                                    class="placeholder">[purpose — higher studies, visa, part-time work,
+                                                    etc.]</span>.</p>
+                                            <p>This NOC is issued for the specific purpose of <span
+                                                    class="placeholder">[purpose]</span> only and does not relieve the
+                                                employee of their obligations to the organisation.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span><br /><em>(Company
+                                                    Seal)</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Salary Certificate / Income Certificate <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Salary Certificate</span>
+                                            <p><strong>[Company Name]</strong> | Date: [DD/MM/YYYY]</p>
+                                            <p><strong>To Whom It May Concern — Salary Certificate</strong></p>
+                                            <p>This is to certify that <span class="placeholder">[Employee Name]</span>
+                                                (ID: <span class="placeholder">[ID]</span>) is employed with [Company
+                                                Name] as <span class="placeholder">[Designation]</span> since <span
+                                                    class="placeholder">[Date of Joining]</span>.</p>
+                                            <p><strong>Current Gross Monthly Salary:</strong> ₹ <span
+                                                    class="placeholder">[Amount]</span><br /><strong>Annual
+                                                    CTC:</strong> ₹ <span
+                                                    class="placeholder">[Amount]</span><br /><strong>Net Monthly
+                                                    Take-Home:</strong> ₹ <span class="placeholder">[Amount]</span>
+                                                (approximate)</p>
+                                            <p>This certificate is issued at the request of the employee for the purpose
+                                                of <span class="placeholder">[loan application / visa / rental agreement
+                                                    / other]</span>.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span><br /><em>(Company
+                                                    Seal)</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Address Proof / Employment Verification Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Employment Verification</span>
+                                            <p><strong>[Company Name]</strong> | Date: [DD/MM/YYYY]</p>
+                                            <p><strong>To Whom It May Concern</strong></p>
+                                            <p>This is to certify that <span class="placeholder">[Employee Name]</span>
+                                                is currently employed with [Company Name] as <span
+                                                    class="placeholder">[Designation]</span> since <span
+                                                    class="placeholder">[Date of Joining]</span>.</p>
+                                            <p>As per our records, <span class="placeholder">[his/her/their]</span>
+                                                current residential address is: <span class="placeholder">[Full
+                                                    Address]</span>.</p>
+                                            <p>This letter is issued upon the employee's request for <span
+                                                    class="placeholder">[purpose]</span> and does not constitute a
+                                                guarantee or commitment by the organisation.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span><br /><em>(Company
+                                                    Seal)</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Deputation Letter <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Deputation Letter</span>
+                                            <p>Date: [DD/MM/YYYY]</p>
+                                            <p>To, <span class="placeholder">[Employee Name]</span> — <span
+                                                    class="placeholder">[Employee ID]</span></p>
+                                            <p><strong>Subject: Deputation</strong></p>
+                                            <p>You are being deputed to <span class="placeholder">[Client / Partner
+                                                    Organisation / Project Site]</span> for the period <span
+                                                    class="placeholder">[Start Date]</span> to <span
+                                                    class="placeholder">[End Date]</span>.</p>
+                                            <p><strong>Location:</strong> <span class="placeholder">[Deputation
+                                                    Location]</span><br /><strong>Reporting to:</strong> <span
+                                                    class="placeholder">[On-site
+                                                    Manager]</span><br /><strong>Allowances:</strong> <span
+                                                    class="placeholder">[Deputation allowance, travel, accommodation
+                                                    details]</span></p>
+                                            <p>You remain an employee of [Company Name] during this period. All
+                                                organisational policies continue to apply.</p>
+                                            <p>For <span class="placeholder">[Company Name]</span>,<br /><span
+                                                    class="placeholder">[Authorised Signatory]</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="inline-disclaimer">All templates are indicative. Adapt as per organisational policy and
+                        applicable laws.</p>
+                </div>
+
+                <!-- ═══ STATUTORY TAB ═══ -->
+                <div class="tab-panel" id="tab-statutory">
+                    <div class="section revealed" id="s-stat">
+                        <div class="section-body">
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Employee Declaration Form (Joining) <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Employee Declaration Form</span>
+                                            <p><strong>Employee Personal Details &amp; Declaration Form</strong></p>
+                                            <p><strong>Personal Information:</strong><br />Full Name:
+                                                ____________<br />Date of Birth: ____________<br />Gender:
+                                                ____________<br />Father's / Spouse's Name: ____________<br />Marital
+                                                Status: ____________<br />Nationality: ____________<br />Blood Group:
+                                                ____________</p>
+                                            <p><strong>Contact:</strong><br />Current Address:
+                                                ____________<br />Permanent Address: ____________<br />Phone:
+                                                ____________ | Email: ____________</p>
+                                            <p><strong>Identity Documents:</strong><br />PAN: ____________ | Aadhaar:
+                                                ____________<br />Passport No (if any): ____________<br />Driving
+                                                Licence (if any): ____________</p>
+                                            <p><strong>Bank Details:</strong><br />Bank Name: ____________ | Branch:
+                                                ____________<br />Account No: ____________ | IFSC: ____________</p>
+                                            <p><strong>Emergency Contact:</strong><br />Name: ____________ | Relation:
+                                                ____________ | Phone: ____________</p>
+                                            <p><strong>Previous Employment (last held):</strong><br />Company:
+                                                ____________ | Designation: ____________<br />Duration: ____________ |
+                                                Reason for leaving: ____________<br />UAN (if allotted): ____________ |
+                                                ESIC IP No (if any): ____________</p>
+                                            <p><strong>Declaration:</strong> I declare that all information provided is
+                                                true to the best of my knowledge. I understand that any false
+                                                information may lead to action as per organisational policy.</p>
+                                            <p>Signature: ____________ Date: ____________</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">Nomination Form (EPF / Gratuity / Insurance) <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">Nomination Form</span>
+                                            <p><strong>Nomination Form — For Awareness Reference</strong></p>
+                                            <p>Employee Name: ____________ | Employee ID: ____________<br />Department:
+                                                ____________ | Date of Joining: ____________</p>
+                                            <p><strong>EPF Nomination:</strong></p>
+                                            <p>Nominee 1 — Name: ____________ Relation: ____________ Share:
+                                                _____%<br />Nominee 2 — Name: ____________ Relation: ____________ Share:
+                                                _____%</p>
+                                            <p><strong>Gratuity Nomination:</strong></p>
+                                            <p>Nominee — Name: ____________ Relation: ____________ Share:
+                                                _____%<br />Address: ____________</p>
+                                            <p><strong>Group Insurance / Mediclaim (if applicable):</strong></p>
+                                            <p>Dependants — 1. Name: ____________ Relation: ____________ DOB:
+                                                ____________<br />2. Name: ____________ Relation: ____________ DOB:
+                                                ____________</p>
+                                            <p><em>Note: Organisations commonly use official EPF Form 2 (Revised) and
+                                                    Form F (Gratuity) for statutory nominations. This format is for
+                                                    internal reference only.</em></p>
+                                            <p>Signature: ____________ Date: ____________</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion"><button class="accordion-trigger"
+                                    onclick="toggleAccordion(this)">No-Dues / Clearance Form <span
+                                        class="acc-type">Template</span><span class="chevron">▼</span></button>
+                                <div class="accordion-content">
+                                    <div class="accordion-inner">
+                                        <div class="template-block"><button class="copy-btn"
+                                                onclick="copyTemplate(this)">📋 Copy</button><span
+                                                class="template-label">No-Dues Clearance Form</span>
+                                            <p><strong>No-Dues / Clearance Form</strong></p>
+                                            <p>Employee: <span class="placeholder">[Name]</span> | ID: <span
+                                                    class="placeholder">[ID]</span> | LWD: <span
+                                                    class="placeholder">[Date]</span></p>
+                                            <p><strong>Department Clearances:</strong></p>
+                                            <p>☐ Reporting Manager — Handover complete, no pending work<br /> Signature:
+                                                ______ Date: ______</p>
+                                            <p>☐ IT Department — Laptop returned, email deactivated, access
+                                                revoked<br /> Signature: ______ Date: ______</p>
+                                            <p>☐ Finance — No outstanding advances, loans settled<br /> Signature:
+                                                ______ Date: ______</p>
+                                            <p>☐ Admin — ID card returned, keys returned, parking tag returned<br />
+                                                Signature: ______ Date: ______</p>
+                                            <p>☐ HR — Exit interview done, F&amp;F initiated, documents issued<br />
+                                                Signature: ______ Date: ______</p>
+                                            <p>☐ Library / Resources — All materials returned<br /> Signature: ______
+                                                Date: ______</p>
+                                            <p><strong>HR Final Sign-Off:</strong> All clearances obtained. F&amp;F may
+                                                be processed.<br />HR Signature: ______ Date: ______</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="inline-disclaimer">All templates are indicative. Adapt as per organisational policy and
+                        applicable laws.</p>
+                </div>
+
+            </div>
+            <footer class="global-footer" id="globalFooter"></footer>
+        </main>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Top">↑</button>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>

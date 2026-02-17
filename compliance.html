@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compliance &amp; Filings — HR Resources</title>
+    <meta name="description"
+        content="Compliance calendar, registration checklists, statutory forms reference, India's new labour codes guide, and audit preparedness for Indian HR practitioners." />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body data-page="compliance">
+    <div class="reading-progress" id="readingProgress"></div>
+    <canvas id="particleCanvas"></canvas>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="app-layout">
+        <aside class="sidebar" id="sidebar"></aside>
+        <main class="main-content">
+            <div class="page-header">
+                <div class="page-header-inner">
+                    <h1>📅 Compliance &amp; Filings</h1>
+                    <p>Month-wise compliance calendar, new establishment registration checklist, statutory forms index,
+                        India's new labour codes overview, and audit preparedness guide. All timelines are
+                        indicative — refer to official notifications for current status.</p>
+                </div>
+            </div>
+            <div class="content-area">
+
+                <!-- COMPLIANCE CALENDAR -->
+                <div class="section" id="calendar">
+                    <div class="section-header">
+                        <div class="section-icon">📅</div>
+                        <h2>Monthly Compliance Calendar</h2>
+                    </div>
+                    <p class="section-purpose">Indicative month-wise overview of common compliance filing timelines.
+                        Actual dates and applicability vary by state, industry, and organisation size.</p>
+                    <div class="section-body">
+                        <div class="callout note"><span class="callout-icon">📌</span><span>This calendar is a general
+                                awareness tool. Always refer to official notifications for current deadlines.</span>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🔄</span> Monthly Filings</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>By Date</th>
+                                            <th>Filing / Activity</th>
+                                            <th>Form / Portal</th>
+                                            <th>Category</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>7th</td>
+                                            <td>TDS deposit for salary deductions (previous month)</td>
+                                            <td>Challan 281 / NSDL</td>
+                                            <td><span class="tag gold">Tax</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11th</td>
+                                            <td>GSTR-1 filing (outward supplies)</td>
+                                            <td>GST Portal</td>
+                                            <td><span class="tag gold">GST</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13th</td>
+                                            <td>GSTR-1 filing via IFF (QRMP scheme)</td>
+                                            <td>GST Portal</td>
+                                            <td><span class="tag gold">GST</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15th</td>
+                                            <td>EPF contribution remittance + ECR filing</td>
+                                            <td>EPFO Unified Portal</td>
+                                            <td><span class="tag navy">PF</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15th</td>
+                                            <td>ESI contribution remittance</td>
+                                            <td>ESIC Portal</td>
+                                            <td><span class="tag navy">ESI</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15th</td>
+                                            <td>Professional Tax remittance (where applicable)</td>
+                                            <td>State PT Portal</td>
+                                            <td><span class="tag gold">Tax</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>20th</td>
+                                            <td>GSTR-3B filing</td>
+                                            <td>GST Portal</td>
+                                            <td><span class="tag gold">GST</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>25th</td>
+                                            <td>PF International Workers return (if applicable)</td>
+                                            <td>EPFO</td>
+                                            <td><span class="tag navy">PF</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Last day</td>
+                                            <td>Payroll processing and salary disbursement</td>
+                                            <td>Internal</td>
+                                            <td><span class="tag success">Payroll</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📊</span> Quarterly Filings</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Quarter End</th>
+                                            <th>Filing / Activity</th>
+                                            <th>Form</th>
+                                            <th>Category</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Jun / Sep / Dec / Mar</td>
+                                            <td>TDS quarterly return (salary)</td>
+                                            <td>Form 24Q</td>
+                                            <td><span class="tag gold">Tax</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jun / Sep / Dec / Mar</td>
+                                            <td>TDS quarterly return (non-salary)</td>
+                                            <td>Form 26Q</td>
+                                            <td><span class="tag gold">Tax</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jun / Sep / Dec / Mar</td>
+                                            <td>TCS quarterly return</td>
+                                            <td>Form 27EQ</td>
+                                            <td><span class="tag gold">Tax</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>After each quarter</td>
+                                            <td>Professional Tax quarterly return (some states)</td>
+                                            <td>State-specific</td>
+                                            <td><span class="tag gold">Tax</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>After each quarter</td>
+                                            <td>Advance tax installment (if applicable)</td>
+                                            <td>Challan 280</td>
+                                            <td><span class="tag gold">Tax</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📌</span> Half-Yearly &amp; Annual</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Timeline</th>
+                                            <th>Filing / Activity</th>
+                                            <th>Form / Reference</th>
+                                            <th>Category</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Apr (half-yearly)</td>
+                                            <td>ESI half-yearly return</td>
+                                            <td>ESIC Portal</td>
+                                            <td><span class="tag navy">ESI</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oct (half-yearly)</td>
+                                            <td>ESI half-yearly return</td>
+                                            <td>ESIC Portal</td>
+                                            <td><span class="tag navy">ESI</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feb (annually)</td>
+                                            <td>PF annual return</td>
+                                            <td>Form 3A / 6A</td>
+                                            <td><span class="tag navy">PF</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Apr–May</td>
+                                            <td>Form 16 issuance to employees</td>
+                                            <td>TRACES portal</td>
+                                            <td><span class="tag gold">Tax</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jun 15</td>
+                                            <td>TDS certificate (non-salary) — Form 16A</td>
+                                            <td>TRACES</td>
+                                            <td><span class="tag gold">Tax</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Annual (Jan–Mar)</td>
+                                            <td>Annual bonus computation and payment</td>
+                                            <td>Payment of Bonus Act</td>
+                                            <td><span class="tag success">Bonus</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Annual (varies)</td>
+                                            <td>Gratuity provisioning review</td>
+                                            <td>Internal</td>
+                                            <td><span class="tag navy">Gratuity</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Annual (varies)</td>
+                                            <td>Labour welfare fund contribution</td>
+                                            <td>State LWF portal</td>
+                                            <td><span class="tag success">Welfare</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Annual (varies)</td>
+                                            <td>Shops &amp; Establishments licence renewal</td>
+                                            <td>Labour Dept</td>
+                                            <td><span class="tag success">Licence</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Annual (on occurrence)</td>
+                                            <td>POSH — Committee annual report filing</td>
+                                            <td>District Officer</td>
+                                            <td><span class="tag info">POSH</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Annual</td>
+                                            <td>Equal Remuneration Act return</td>
+                                            <td>Form D</td>
+                                            <td><span class="tag info">Returns</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ongoing</td>
+                                            <td>Maintenance of statutory registers (wages, attendance, leave, etc.)</td>
+                                            <td>Various Acts</td>
+                                            <td><span class="tag navy">Records</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p class="inline-disclaimer">This calendar is indicative and for general awareness only. Actual
+                            dates may vary.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- NEW ESTABLISHMENT CHECKLIST -->
+                <div class="section" id="newsetup">
+                    <div class="section-header">
+                        <div class="section-icon">🏢</div>
+                        <h2>New Establishment — Registration Checklist</h2>
+                    </div>
+                    <p class="section-purpose">Indicative registrations commonly required when setting up a new
+                        establishment in India.</p>
+                    <div class="section-body">
+                        <div class="table-wrap">
+                            <table class="ref-table">
+                                <thead>
+                                    <tr>
+                                        <th>Registration</th>
+                                        <th>Applicable When</th>
+                                        <th>Who Files</th>
+                                        <th>Portal / Office</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shops &amp; Establishments Act</td>
+                                        <td>All commercial establishments</td>
+                                        <td>Employer</td>
+                                        <td>State Labour Dept / Online</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EPF Registration</td>
+                                        <td>20+ employees (10+ in some notified industries)</td>
+                                        <td>Employer</td>
+                                        <td>EPFO Unified Portal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ESI Registration</td>
+                                        <td>10+ employees with wages ≤ ₹21,000/month</td>
+                                        <td>Employer</td>
+                                        <td>ESIC Portal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Professional Tax</td>
+                                        <td>All employers (state-specific)</td>
+                                        <td>Employer</td>
+                                        <td>State PT Department</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TAN Registration</td>
+                                        <td>All employers deducting TDS</td>
+                                        <td>Employer</td>
+                                        <td>NSDL / Income Tax Portal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GST Registration</td>
+                                        <td>Turnover exceeds threshold / inter-state supply</td>
+                                        <td>Business</td>
+                                        <td>GST Portal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>POSH Internal Committee</td>
+                                        <td>10+ employees</td>
+                                        <td>Employer</td>
+                                        <td>Internal setup</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Factory Registration</td>
+                                        <td>Manufacturing with 10+ workers (with power) or 20+ (without)</td>
+                                        <td>Employer</td>
+                                        <td>State Factory Inspectorate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Contract Labour Registration</td>
+                                        <td>20+ contract workers engaged</td>
+                                        <td>Principal Employer</td>
+                                        <td>State Labour Dept</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Labour Welfare Fund</td>
+                                        <td>Where state mandates (not all states)</td>
+                                        <td>Employer</td>
+                                        <td>State LWF Board</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fire Safety / NOC</td>
+                                        <td>Commercial premises</td>
+                                        <td>Occupier</td>
+                                        <td>Fire Department</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PAN for Company</td>
+                                        <td>All entities</td>
+                                        <td>Company</td>
+                                        <td>NSDL / UTIITSL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bank Account (current)</td>
+                                        <td>All businesses</td>
+                                        <td>Company</td>
+                                        <td>Bank</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="inline-disclaimer">Requirements vary by state, industry, and headcount. Verify with
+                            appropriate authorities.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- STATUTORY FORMS -->
+                <div class="section" id="forms">
+                    <div class="section-header">
+                        <div class="section-icon">📝</div>
+                        <h2>Statutory Forms Quick Reference</h2>
+                    </div>
+                    <p class="section-purpose">Index of commonly referenced statutory forms. For awareness only — always
+                        use the latest version from the official portal.</p>
+                    <div class="section-body">
+                        <div class="tab-nav">
+                            <button class="tab-btn active" data-tab="tab-epf">EPF Forms</button>
+                            <button class="tab-btn" data-tab="tab-esi">ESI Forms</button>
+                            <button class="tab-btn" data-tab="tab-tax">Tax Forms</button>
+                            <button class="tab-btn" data-tab="tab-other">Other</button>
+                        </div>
+                        <div class="tab-panel active" id="tab-epf">
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Form</th>
+                                            <th>Purpose</th>
+                                            <th>Filed By</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Form 11 (Revised)</td>
+                                            <td>Employee declaration for EPF/EPS — new joiner</td>
+                                            <td>Employee (via employer)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 2 (Revised)</td>
+                                            <td>EPF nominee declaration</td>
+                                            <td>Employee</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 5</td>
+                                            <td>New member registration — monthly return</td>
+                                            <td>Employer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 10</td>
+                                            <td>Member leaving — monthly return</td>
+                                            <td>Employer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 12A</td>
+                                            <td>Monthly EPF contribution statement</td>
+                                            <td>Employer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 3A</td>
+                                            <td>Annual individual member contribution</td>
+                                            <td>Employer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 6A</td>
+                                            <td>Annual consolidated statement</td>
+                                            <td>Employer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 19</td>
+                                            <td>PF final settlement claim</td>
+                                            <td>Employee</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 10C</td>
+                                            <td>EPS withdrawal benefit claim</td>
+                                            <td>Employee</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 31</td>
+                                            <td>PF advance / part withdrawal</td>
+                                            <td>Employee</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 13</td>
+                                            <td>PF transfer from one employer to another</td>
+                                            <td>Employee</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 10D</td>
+                                            <td>EPS pension claim</td>
+                                            <td>Employee</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="tab-esi">
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Form</th>
+                                            <th>Purpose</th>
+                                            <th>Filed By</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ESIC Form 1</td>
+                                            <td>Employer registration</td>
+                                            <td>Employer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ESIC Declaration Form</td>
+                                            <td>Employee declaration at time of joining</td>
+                                            <td>Employee</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 3 (Register)</td>
+                                            <td>Register of employees</td>
+                                            <td>Employer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 5 (Return)</td>
+                                            <td>Half-yearly return of contributions</td>
+                                            <td>Employer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 12 (Accident)</td>
+                                            <td>Report of accident / occupational disease</td>
+                                            <td>Employer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pehchan Card</td>
+                                            <td>ESI identity card for employee &amp; dependants</td>
+                                            <td>Employer / ESIC</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="tab-tax">
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Form</th>
+                                            <th>Purpose</th>
+                                            <th>Frequency</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Form 16</td>
+                                            <td>TDS certificate — salary</td>
+                                            <td>Annual (to employee)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 16A</td>
+                                            <td>TDS certificate — non-salary</td>
+                                            <td>Quarterly</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 24Q</td>
+                                            <td>Quarterly TDS return — salary</td>
+                                            <td>Quarterly</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 26Q</td>
+                                            <td>Quarterly TDS return — non-salary</td>
+                                            <td>Quarterly</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 26AS / AIS</td>
+                                            <td>Annual tax statement / Annual Information Statement</td>
+                                            <td>Annual</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 12BB</td>
+                                            <td>Employee investment declaration (for TDS calculation)</td>
+                                            <td>Annual (beginning of FY)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form 12BA</td>
+                                            <td>Perquisites statement as part of Form 16</td>
+                                            <td>Annual</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Challan 281</td>
+                                            <td>TDS/TCS challan for deposit</td>
+                                            <td>Monthly</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="tab-other">
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Form / Register</th>
+                                            <th>Under</th>
+                                            <th>Purpose</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Form A (Muster Roll)</td>
+                                            <td>Shops &amp; Establishments Act</td>
+                                            <td>Attendance register</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form B (Wage Register)</td>
+                                            <td>Payment of Wages Act</td>
+                                            <td>Salary payment record</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form C (Leave Register)</td>
+                                            <td>Shops &amp; Establishments Act</td>
+                                            <td>Leave record</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form D</td>
+                                            <td>Equal Remuneration Act</td>
+                                            <td>Annual return</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form F</td>
+                                            <td>Payment of Gratuity Act</td>
+                                            <td>Nomination form</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Form I</td>
+                                            <td>Payment of Gratuity Act</td>
+                                            <td>Application for gratuity</td>
+                                        </tr>
+                                        <tr>
+                                            <td>POSH Annual Report</td>
+                                            <td>POSH Act, 2013</td>
+                                            <td>Annual compliance report to District Officer</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p class="inline-disclaimer">Always download the latest version of forms from the respective
+                            official portals.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- NEW LABOUR CODES -->
+                <div class="section" id="labourcodes">
+                    <div class="section-header">
+                        <div class="section-icon">⚖️</div>
+                        <h2>India's New Labour Codes — What HR Must Know</h2>
+                    </div>
+                    <p class="section-purpose">India's 4 new labour codes came into effect on 21 November 2025,
+                        consolidating 29 older laws. Final central rules expected by 1 April 2026. This section covers
+                        the key changes, their HR impact, and what you should be doing now.</p>
+                    <div class="section-body">
+                        <div class="callout warning"><span class="callout-icon">⚠️</span><span><strong>Transitional
+                                    Period:</strong> While the codes are officially in force, final state-level rules
+                                are still being notified. Until your state notifies its rules, the existing old acts
+                                continue to apply. Monitor your state gazette for notifications. <strong>Last updated:
+                                    February 2026.</strong></span></div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📋</span> The 4 Codes at a Glance</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>New Code</th>
+                                            <th>Year</th>
+                                            <th>Replaces</th>
+                                            <th>Key Focus</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Code on Wages</strong></td>
+                                            <td>2019</td>
+                                            <td>Payment of Wages Act, Minimum Wages Act, Payment of Bonus Act, Equal
+                                                Remuneration Act</td>
+                                            <td>Universal minimum wages, wage definition, bonus, equal pay</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Industrial Relations Code</strong></td>
+                                            <td>2020</td>
+                                            <td>Industrial Disputes Act, Trade Unions Act, Industrial Employment
+                                                (Standing Orders) Act</td>
+                                            <td>Strikes &amp; lockouts, retrenchment, fixed-term employment, standing
+                                                orders</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Code on Social Security</strong></td>
+                                            <td>2020</td>
+                                            <td>EPF &amp; MP Act, ESI Act, Maternity Benefit Act, Payment of Gratuity
+                                                Act, Employee's Compensation Act, Unorganised Workers' Social Security
+                                                Act, &amp; others</td>
+                                            <td>PF, ESI, gratuity, maternity, gig worker coverage</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>OSH Code</strong></td>
+                                            <td>2020</td>
+                                            <td>Factories Act, Mines Act, Contract Labour Act, Building &amp; Other
+                                                Construction Workers Act, &amp; others</td>
+                                            <td>Workplace safety, working conditions, contract workers, welfare</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🔄</span> Key Changes That Affect HR Daily</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Change</th>
+                                            <th>Old Position</th>
+                                            <th>New Position</th>
+                                            <th>HR Impact</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Wage Definition</strong></td>
+                                            <td>No uniform definition across laws</td>
+                                            <td>Basic + DA + Retaining Allowance must be ≥ <strong>50% of total
+                                                    remuneration</strong></td>
+                                            <td>🔴 Major payroll restructuring needed. PF, gratuity, bonus
+                                                contributions will increase if current basic is below 50%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Fixed-Term Employment</strong></td>
+                                            <td>No explicit legal framework</td>
+                                            <td>Legally recognised. Fixed-term employees get <strong>parity</strong> in
+                                                wages, benefits, and statutory contributions</td>
+                                            <td>🟡 Review contract templates. FTE workers now entitled to
+                                                gratuity pro-rata even if tenure &lt; 5 years</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Layoff/Retrenchment Threshold</strong></td>
+                                            <td>Govt permission needed for 100+ workers</td>
+                                            <td>Threshold raised to <strong>300+ workers</strong></td>
+                                            <td>🟢 More flexibility for establishments with 100–299 workers</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Mandatory Appointment Letters</strong></td>
+                                            <td>Not universally mandated</td>
+                                            <td><strong>Written appointment letter mandatory</strong> for every worker
+                                            </td>
+                                            <td>🔴 Audit all employees — ensure 100% have signed appointment
+                                                letters</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Gig &amp; Platform Workers</strong></td>
+                                            <td>No social security coverage</td>
+                                            <td>Included under Social Security Code — govt schemes for
+                                                life/disability/health/pension</td>
+                                            <td>🟡 Companies using gig workers may see new contribution
+                                                obligations</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Single Registration</strong></td>
+                                            <td>Separate registrations under each act</td>
+                                            <td><strong>One central registration</strong> replacing multiple
+                                                registrations</td>
+                                            <td>🟢 Simplified compliance — fewer forms, fewer renewals</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Standing Orders</strong></td>
+                                            <td>Required for establishments with 100+ industrial workers</td>
+                                            <td>Threshold raised to <strong>300+ workers</strong>. Model standing
+                                                orders auto-apply for smaller establishments</td>
+                                            <td>🟡 Review if your standing orders need updating or if you now fall
+                                                under model orders</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Trade Union Recognition</strong></td>
+                                            <td>No statutory framework for recognition</td>
+                                            <td>Negotiating union/council framework introduced with threshold
+                                                criteria</td>
+                                            <td>🟡 Be aware of the new framework if your workplace has unions</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">💰
+                                Salary Restructuring Impact — Worked Example
+                                <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <p><strong>The Problem:</strong> Many Indian companies structure CTC with a low
+                                        basic (30–40% of gross) to reduce PF/gratuity outgo. Under the new Wage Code,
+                                        <strong>basic + DA must be at least 50% of total remuneration</strong>. This
+                                        changes the math significantly.
+                                    </p>
+                                    <div class="table-wrap">
+                                        <table class="ref-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Component</th>
+                                                    <th>Old Structure (Basic = 35%)</th>
+                                                    <th>New Structure (Basic = 50%)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Gross Salary</td>
+                                                    <td>₹50,000</td>
+                                                    <td>₹50,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Basic</td>
+                                                    <td>₹17,500 (35%)</td>
+                                                    <td>₹25,000 (50%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Employer PF (12% of Basic)</td>
+                                                    <td>₹2,100</td>
+                                                    <td>₹3,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Gratuity Provisioning (4.81%)</td>
+                                                    <td>₹842</td>
+                                                    <td>₹1,203</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Increase in employer cost per employee per
+                                                            month</strong></td>
+                                                    <td colspan="2" style="text-align:center"><strong>~₹1,261/month
+                                                            (~₹15,130/year)</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="callout note"><span class="callout-icon">📌</span><span>For a
+                                            100-employee company, this could mean an additional <strong>₹15+ lakhs per
+                                                year</strong> in statutory outgo. Budget for this
+                                            <strong>now</strong>.</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">✅ HR
+                                Preparation Checklist — What to Do Now
+                                <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="sub-section">
+                                        <h3><span class="sub-icon">🔴</span> Immediate (Do This Month)</h3>
+                                        <ul class="checklist">
+                                            <li>Audit current salary structures — check if basic is ≥ 50% of total
+                                                remuneration</li>
+                                            <li>Ensure <strong>every employee</strong> has a signed appointment letter
+                                                on file</li>
+                                            <li>Check which state your establishments are registered in and whether
+                                                that state has notified final rules</li>
+                                            <li>Brief the CFO/Finance team on the salary restructuring cost impact</li>
+                                            <li>Review all fixed-term/contract worker agreements for parity compliance
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-section">
+                                        <h3><span class="sub-icon">🟡</span> Short-Term (Next 30–60 Days)</h3>
+                                        <ul class="checklist">
+                                            <li>Model the financial impact of wage restructuring on PF, gratuity,
+                                                bonus, and ESI</li>
+                                            <li>Update the employee handbook and HR policy manual to reflect the new
+                                                codes</li>
+                                            <li>Review and update standing orders if applicable (or confirm model
+                                                standing orders apply)</li>
+                                            <li>Identify gig/platform workers in your workforce and assess social
+                                                security obligations</li>
+                                            <li>Register on the new single registration portal once available in your
+                                                state</li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-section">
+                                        <h3><span class="sub-icon">🟢</span> Ongoing (Q1 2026 and Beyond)</h3>
+                                        <ul class="checklist">
+                                            <li>Monitor state-level gazette notifications for final rule publication
+                                            </li>
+                                            <li>Attend SHRM/NHRD/CII briefings on implementation nuances</li>
+                                            <li>Train managers and payroll teams on the new compliance requirements</li>
+                                            <li>Update payroll software/HRMS to handle new wage definitions and
+                                                contribution calculations</li>
+                                            <li>Plan employee communication about any changes to their salary structure
+                                                (take-home may change even if CTC stays same)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">🗓️
+                                Implementation Timeline
+                                <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="flow-steps">
+                                        <div class="flow-step"><span class="flow-num">1</span>
+                                            <h4>Codes Passed by Parliament</h4>
+                                            <p>2019–2020 — All 4 codes passed, consolidating 29 laws</p>
+                                        </div>
+                                        <div class="flow-step"><span class="flow-num">2</span>
+                                            <h4>Codes Brought into Effect</h4>
+                                            <p><strong>21 November 2025</strong> — Official enforcement date via
+                                                gazette notification</p>
+                                        </div>
+                                        <div class="flow-step"><span class="flow-num">3</span>
+                                            <h4>Draft Central Rules Published</h4>
+                                            <p>30 December 2025 — Draft rules published, inviting public
+                                                objections/suggestions</p>
+                                        </div>
+                                        <div class="flow-step"><span class="flow-num">4</span>
+                                            <h4>IR Code Amendment Bill</h4>
+                                            <p><strong>13 February 2026</strong> — Amendment passed addressing
+                                                ambiguities in worker protection, minimum wages, and appointment letter
+                                                mandates</p>
+                                        </div>
+                                        <div class="flow-step"><span class="flow-num">5</span>
+                                            <h4>Final Rules Expected</h4>
+                                            <p><strong>1 April 2026</strong> — Target date for final central and state
+                                                rules notification, enabling full implementation</p>
+                                        </div>
+                                    </div>
+                                    <div class="callout info"><span class="callout-icon">📌</span><span><strong>State
+                                                Progress:</strong> As of Feb 2026, only Gujarat, Arunachal Pradesh, and
+                                            Bihar have finalized state-level rules. Most other states have published
+                                            draft rules or are in the comment period. Until your state notifies final
+                                            rules, old acts and their rules continue to apply.</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="inline-disclaimer">This section is for general awareness and is not legal advice. The
+                            codes and rules are evolving — always verify with official gazette notifications and consult
+                            legal counsel for specific applicability. Last updated: February 2026.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- AUDIT PREPAREDNESS -->
+                <div class="section" id="audit">
+                    <div class="section-header">
+                        <div class="section-icon">🔍</div>
+                        <h2>Compliance Audit Preparedness Checklist</h2>
+                    </div>
+                    <p class="section-purpose">Indicative checklist of records and documents commonly reviewed during
+                        compliance audits.</p>
+                    <div class="section-body">
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📂</span> Employee Records</h3>
+                            <ul class="checklist">
+                                <li>Appointment letters for all employees (signed copies)</li>
+                                <li>Joining documents — ID proofs, photographs, Form 11</li>
+                                <li>Nomination forms (EPF Form 2, Gratuity Form F)</li>
+                                <li>Confirmation / probation extension letters</li>
+                                <li>Updated employee master database</li>
+                            </ul>
+                        </div>
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">💰</span> Payroll &amp; Statutory</h3>
+                            <ul class="checklist">
+                                <li>Salary registers / payroll reports (month-wise)</li>
+                                <li>EPF challans and ECR receipts (monthly)</li>
+                                <li>ESI challans and contribution records</li>
+                                <li>Professional Tax receipts</li>
+                                <li>TDS challans (Challan 281) and quarterly returns (24Q/26Q)</li>
+                                <li>Form 16 issuance records</li>
+                                <li>Bonus computation sheets</li>
+                                <li>Gratuity provisioning records</li>
+                                <li>Minimum wage compliance records</li>
+                            </ul>
+                        </div>
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📋</span> Registers &amp; Records</h3>
+                            <ul class="checklist">
+                                <li>Attendance / muster roll register</li>
+                                <li>Leave register</li>
+                                <li>Wage register</li>
+                                <li>Overtime register (if applicable)</li>
+                                <li>Register of fines and deductions (if any)</li>
+                                <li>Accident register (if applicable)</li>
+                                <li>Equal remuneration records</li>
+                            </ul>
+                        </div>
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📜</span> Policies &amp; Committees</h3>
+                            <ul class="checklist">
+                                <li>POSH policy — displayed + shared with employees</li>
+                                <li>Internal Complaints Committee (ICC) — constituted with external member</li>
+                                <li>ICC annual report filed</li>
+                                <li>Employee handbook / policy manual (current version)</li>
+                                <li>Shops &amp; Establishments registration certificate (displayed)</li>
+                                <li>Abstract of key labour laws (displayed)</li>
+                            </ul>
+                        </div>
+                        <p class="inline-disclaimer">This checklist is indicative. Audit scope and requirements vary by
+                            jurisdiction and auditor.</p>
+                    </div>
+                </div>
+
+            </div>
+            <footer class="global-footer" id="globalFooter"></footer>
+        </main>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Top">↑</button>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Lifecycle — HR Resources</title>
+    <meta name="description"
+        content="Full employee lifecycle reference — recruitment, onboarding, performance management, training, and exit process for Indian HR practitioners." />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body data-page="lifecycle">
+    <div class="reading-progress" id="readingProgress"></div>
+    <canvas id="particleCanvas"></canvas>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="app-layout">
+        <aside class="sidebar" id="sidebar"></aside>
+        <main class="main-content">
+            <div class="page-header">
+                <div class="page-header-inner">
+                    <h1>🔄 Employee Lifecycle</h1>
+                    <p>End-to-end reference for every stage — recruitment, onboarding, performance management, training
+                        &amp; development, and exit. Each phase includes practical checklists and indicative frameworks.
+                    </p>
+                </div>
+            </div>
+            <div class="content-area">
+
+                <!-- ═══ RECRUITMENT ═══ -->
+                <div class="section" id="recruitment">
+                    <div class="section-header">
+                        <div class="section-icon">🎯</div>
+                        <h2>1. Recruitment &amp; Selection</h2>
+                    </div>
+                    <p class="section-purpose">Indicative reference for structuring the recruitment process.</p>
+                    <div class="section-body">
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📋</span> Recruitment Process Flow</h3>
+                            <div class="flow-steps">
+                                <div class="flow-step">
+                                    <div class="step-dot">1</div>
+                                    <div class="step-content">
+                                        <h4>Manpower Requisition</h4>
+                                        <p>Department raises requisition with justification (replacement / new
+                                            position). Approved by department head and HR.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">2</div>
+                                    <div class="step-content">
+                                        <h4>Job Description &amp; Posting</h4>
+                                        <p>Draft JD with role, responsibilities, qualifications, experience, skills.
+                                            Post on job portals, social media, internal job board, employee referrals.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">3</div>
+                                    <div class="step-content">
+                                        <h4>Screening &amp; Shortlisting</h4>
+                                        <p>Resume screening against JD criteria. Initial phone/video screening.
+                                            Shortlist for interviews.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">4</div>
+                                    <div class="step-content">
+                                        <h4>Interviews</h4>
+                                        <p>Round 1: Technical/functional assessment. Round 2: Manager/team interview.
+                                            Round 3: HR/culture fit. Panel interviews for senior roles.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">5</div>
+                                    <div class="step-content">
+                                        <h4>Assessment &amp; Reference Check</h4>
+                                        <p>Skills test, psychometric assessment, or case study (as applicable).
+                                            Reference checks with previous employers.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">6</div>
+                                    <div class="step-content">
+                                        <h4>Offer &amp; Negotiation</h4>
+                                        <p>Verbal offer, followed by formal offer letter. Compensation discussion.
+                                            Joining date confirmation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">Job
+                                Description Framework <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="template-block"><button class="copy-btn" onclick="copyTemplate(this)">📋
+                                            Copy</button><span class="template-label">JD Framework</span>
+                                        <p><strong>Job Title:</strong> <span class="placeholder">[Title]</span> |
+                                            <strong>Department:</strong> <span class="placeholder">[Dept]</span> |
+                                            <strong>Location:</strong> <span class="placeholder">[Location]</span>
+                                        </p>
+                                        <p><strong>Reports To:</strong> <span class="placeholder">[Manager Title]</span>
+                                            | <strong>Grade/Level:</strong> <span class="placeholder">[Level]</span></p>
+                                        <p><strong>Role Summary:</strong> <span class="placeholder">[2-3 sentence
+                                                overview of the role's purpose]</span></p>
+                                        <p><strong>Key Responsibilities:</strong><br />• <span
+                                                class="placeholder">[Responsibility 1]</span><br />• <span
+                                                class="placeholder">[Responsibility 2]</span><br />• <span
+                                                class="placeholder">[Responsibility 3]</span><br />• <span
+                                                class="placeholder">[4-6 more as applicable]</span></p>
+                                        <p><strong>Qualifications:</strong> <span class="placeholder">[Education,
+                                                certifications]</span><br /><strong>Experience:</strong> <span
+                                                class="placeholder">[X years in Y domain]</span><br /><strong>Must-Have
+                                                Skills:</strong> <span class="placeholder">[Technical
+                                                skills]</span><br /><strong>Good-to-Have:</strong> <span
+                                                class="placeholder">[Preferred skills]</span></p>
+                                        <p><strong>Compensation Range:</strong> <span class="placeholder">[₹X – ₹Y
+                                                LPA]</span> (based on experience)<br /><strong>Employment Type:</strong>
+                                            <span class="placeholder">[Full-time / Contract / Part-time]</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger"
+                                onclick="toggleAccordion(this)">Interview Evaluation Scorecard <span
+                                    class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="template-block"><button class="copy-btn" onclick="copyTemplate(this)">📋
+                                            Copy</button><span class="template-label">Interview Scorecard</span>
+                                        <p><strong>Candidate:</strong> ____________ | <strong>Position:</strong>
+                                            ____________ | <strong>Date:</strong> ____________</p>
+                                        <p><strong>Interviewer:</strong> ____________ | <strong>Round:</strong>
+                                            ____________</p>
+                                        <p><strong>Rating Scale:</strong> 1 = Below Expectations | 2 = Meets Partially |
+                                            3 = Meets | 4 = Exceeds | 5 = Outstanding</p>
+                                        <p>Technical/Functional Knowledge: ☐1 ☐2 ☐3 ☐4 ☐5<br />Communication Skills: ☐1
+                                            ☐2 ☐3 ☐4 ☐5<br />Problem-Solving Ability: ☐1 ☐2 ☐3 ☐4 ☐5<br />Cultural Fit /
+                                            Values Alignment: ☐1 ☐2 ☐3 ☐4 ☐5<br />Leadership Potential (if applicable):
+                                            ☐1 ☐2 ☐3 ☐4 ☐5<br />Domain Experience Relevance: ☐1 ☐2 ☐3 ☐4 ☐5</p>
+                                        <p><strong>Strengths:</strong> ____________<br /><strong>Areas of
+                                                Concern:</strong> ____________</p>
+                                        <p><strong>Recommendation:</strong> ☐ Strong Hire ☐ Hire ☐ On Fence ☐ No
+                                            Hire<br /><strong>Comments:</strong> ____________</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="inline-disclaimer">Adapt recruitment processes to your organisation's scale and
+                            industry.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- ═══ ONBOARDING ═══ -->
+                <div class="section" id="onboarding">
+                    <div class="section-header">
+                        <div class="section-icon">🚀</div>
+                        <h2>2. Onboarding</h2>
+                    </div>
+                    <p class="section-purpose">Comprehensive checklist for structured employee onboarding.</p>
+                    <div class="section-body">
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📋</span> Pre-Joining (Before Day 1)</h3>
+                            <ul class="checklist">
+                                <li>Issue offer letter / appointment letter</li>
+                                <li>Collect signed acceptance</li>
+                                <li>Share joining date, location, reporting manager, and point of contact</li>
+                                <li>Send pre-joining document checklist (ID proofs, certificates, photos, bank details)
+                                </li>
+                                <li>Initiate background verification (if applicable)</li>
+                                <li>Prepare workstation — desk, chair, laptop, peripherals</li>
+                                <li>Set up IT access — email, HRIS, project tools, internal portals</li>
+                                <li>Prepare welcome kit — ID card, handbook, stationery, branded items</li>
+                                <li>Inform team and relevant departments</li>
+                                <li>Schedule Day 1 agenda and orientation calendar</li>
+                            </ul>
+                        </div>
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📝</span> Day 1 — Joining Formalities</h3>
+                            <ul class="checklist">
+                                <li>Welcome and reception by HR / reporting manager</li>
+                                <li>Collect joining documents — originals for verification, copies for file</li>
+                                <li>Complete statutory forms: EPF Form 11, Form 2 (nomination), ESI declaration</li>
+                                <li>Collect PAN, Aadhaar, bank account details for payroll setup</li>
+                                <li>Issue employee ID card and access credentials</li>
+                                <li>Add to HRIS / attendance system</li>
+                                <li>Share and obtain acknowledgement: Employee Handbook, Leave Policy, POSH Policy, IT
+                                    Policy, Code of Conduct</li>
+                                <li>Office tour and facility walkthrough</li>
+                            </ul>
+                        </div>
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🤝</span> Week 1 — Integration</h3>
+                            <ul class="checklist">
+                                <li>Introduce to team, key stakeholders, cross-functional contacts</li>
+                                <li>Orientation sessions — company history, vision, values, org structure</li>
+                                <li>Assign onboarding buddy / mentor</li>
+                                <li>Walkthrough of tools, workflows, and internal processes</li>
+                                <li>Initial meeting with reporting manager — role expectations, goals, 30-60-90 plan
+                                </li>
+                                <li>Add to relevant communication channels (teams, groups, distribution lists)</li>
+                            </ul>
+                        </div>
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📊</span> 30 / 60 / 90 Day Checkpoints</h3>
+                            <ul class="checklist">
+                                <li><strong>Day 30:</strong> Check-in with HR — settling-in experience, any concerns,
+                                    document completion status</li>
+                                <li><strong>Day 30:</strong> Manager feedback — initial performance observations</li>
+                                <li><strong>Day 60:</strong> Progress review — alignment with role, training completion,
+                                    relationship building</li>
+                                <li><strong>Day 90:</strong> Formal review — probation assessment discussion,
+                                    confirmation recommendation</li>
+                                <li>Collect structured onboarding feedback from new hire</li>
+                                <li>Verify all statutory registrations completed (UAN created, ESI IP generated)</li>
+                            </ul>
+                        </div>
+                        <p class="inline-disclaimer">This checklist is indicative. Adapt to your organisation's scale
+                            and processes.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- ═══ PERFORMANCE MANAGEMENT ═══ -->
+                <div class="section" id="performance">
+                    <div class="section-header">
+                        <div class="section-icon">📈</div>
+                        <h2>3. Performance Management</h2>
+                    </div>
+                    <p class="section-purpose">Indicative frameworks for appraisals, KRA/KPI setting, and performance
+                        improvement.</p>
+                    <div class="section-body">
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🔄</span> Annual Performance Cycle (Indicative)</h3>
+                            <div class="flow-steps">
+                                <div class="flow-step">
+                                    <div class="step-dot">Apr</div>
+                                    <div class="step-content">
+                                        <h4>Goal Setting</h4>
+                                        <p>Manager and employee agree on KRAs and KPIs for the year. Document in HRIS.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">Oct</div>
+                                    <div class="step-content">
+                                        <h4>Mid-Year Review</h4>
+                                        <p>Progress check. Re-calibrate goals if needed. Feedback exchange.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">Mar</div>
+                                    <div class="step-content">
+                                        <h4>Self-Assessment</h4>
+                                        <p>Employee rates own performance against KRAs. Provides evidence and
+                                            commentary.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">Mar</div>
+                                    <div class="step-content">
+                                        <h4>Manager Assessment</h4>
+                                        <p>Manager rates employee. Collects 360° feedback (peers, skip-level) if
+                                            applicable.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">Apr</div>
+                                    <div class="step-content">
+                                        <h4>Calibration &amp; Normalisation</h4>
+                                        <p>HR facilitates cross-team calibration to ensure consistency in ratings.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">Apr</div>
+                                    <div class="step-content">
+                                        <h4>Communication &amp; Increment</h4>
+                                        <p>Performance feedback communicated. Increment/promotion decisions shared.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">KRA /
+                                KPI Framework <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="table-wrap">
+                                        <table class="ref-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>KRA (Key Result Area)</th>
+                                                    <th>KPI (Key Performance Indicator)</th>
+                                                    <th>Weight</th>
+                                                    <th>Target</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="placeholder">[e.g. Sales Revenue]</span></td>
+                                                    <td><span class="placeholder">[Monthly sales target achieved]</span>
+                                                    </td>
+                                                    <td><span class="placeholder">[30%]</span></td>
+                                                    <td><span class="placeholder">[₹X lakhs/quarter]</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="placeholder">[e.g. Customer Satisfaction]</span>
+                                                    </td>
+                                                    <td><span class="placeholder">[CSAT score]</span></td>
+                                                    <td><span class="placeholder">[20%]</span></td>
+                                                    <td><span class="placeholder">[≥ 4.2/5]</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="placeholder">[e.g. Team Development]</span></td>
+                                                    <td><span class="placeholder">[Training hours per team
+                                                            member]</span></td>
+                                                    <td><span class="placeholder">[15%]</span></td>
+                                                    <td><span class="placeholder">[40 hours/year]</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="placeholder">[e.g. Process Improvement]</span></td>
+                                                    <td><span class="placeholder">[Number of improvements
+                                                            implemented]</span></td>
+                                                    <td><span class="placeholder">[15%]</span></td>
+                                                    <td><span class="placeholder">[2 per quarter]</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="placeholder">[e.g. Compliance]</span></td>
+                                                    <td><span class="placeholder">[Zero non-compliance incidents]</span>
+                                                    </td>
+                                                    <td><span class="placeholder">[10%]</span></td>
+                                                    <td><span class="placeholder">[100%]</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Behavioural Competencies</td>
+                                                    <td>Leadership, collaboration, initiative</td>
+                                                    <td><span class="placeholder">[10%]</span></td>
+                                                    <td>Qualitative assessment</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p><strong>Rating Scale (commonly used):</strong><br />5 — Outstanding | 4 — Exceeds
+                                        Expectations | 3 — Meets Expectations | 2 — Needs Improvement | 1 —
+                                        Unsatisfactory</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger"
+                                onclick="toggleAccordion(this)">Performance Improvement Plan (PIP) Framework <span
+                                    class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <p><strong>When to Initiate:</strong> After consistent underperformance (usually
+                                        rating of 2 or below) and after informal coaching attempts have not yielded
+                                        results.</p>
+                                    <p><strong>PIP Duration:</strong> Commonly 30–90 days.</p>
+                                    <p><strong>PIP Components:</strong></p>
+                                    <p>1. <strong>Specific Areas of Concern:</strong> Clearly document what is below
+                                        expectations with evidence.<br />2. <strong>Expected Improvement:</strong>
+                                        Define measurable, achievable targets for the PIP period.<br />3.
+                                        <strong>Support Provided:</strong> Training, mentoring, tools, reduced workload
+                                        — what the organisation will do to help.<br />4. <strong>Review
+                                            Cadence:</strong> Weekly or bi-weekly check-ins with documented
+                                        progress.<br />5. <strong>Outcome:</strong> Successful completion → continue
+                                        employment. Insufficient improvement → further action as per policy (may include
+                                        role change, demotion, or separation).
+                                    </p>
+                                    <p><strong>Key Principles:</strong> Document everything. Be specific, not vague.
+                                        Focus on observable behaviours and measurable outcomes. Ensure employee has a
+                                        genuine opportunity to improve.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="inline-disclaimer">Performance frameworks vary widely. This is an indicative reference
+                            only.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- ═══ TRAINING ═══ -->
+                <div class="section" id="training">
+                    <div class="section-header">
+                        <div class="section-icon">📚</div>
+                        <h2>4. Training &amp; Development</h2>
+                    </div>
+                    <p class="section-purpose">Indicative framework for structuring employee learning and development
+                        programs.</p>
+                    <div class="section-body">
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📋</span> Training Categories</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Category</th>
+                                            <th>Examples</th>
+                                            <th>Audience</th>
+                                            <th>Frequency</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Induction / Orientation</td>
+                                            <td>Company overview, policies, tools</td>
+                                            <td>New joiners</td>
+                                            <td>At joining</td>
+                                        </tr>
+                                        <tr>
+                                            <td>POSH Awareness</td>
+                                            <td>Sexual harassment prevention</td>
+                                            <td>All employees</td>
+                                            <td>Annual</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Technical / Functional</td>
+                                            <td>Domain-specific skills, certifications</td>
+                                            <td>Role-based</td>
+                                            <td>Ongoing</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Behavioural / Soft Skills</td>
+                                            <td>Communication, leadership, teamwork</td>
+                                            <td>All employees</td>
+                                            <td>Periodic</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Compliance Training</td>
+                                            <td>Data privacy, safety, ethics</td>
+                                            <td>All employees</td>
+                                            <td>Annual</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Leadership Development</td>
+                                            <td>People management, strategic thinking</td>
+                                            <td>Managers / HiPos</td>
+                                            <td>Periodic</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Safety / First Aid</td>
+                                            <td>Fire safety, first aid, ergonomics</td>
+                                            <td>All / specific roles</td>
+                                            <td>Annual</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger"
+                                onclick="toggleAccordion(this)">Training Needs Assessment (TNA) Process <span
+                                    class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="flow-steps">
+                                        <div class="flow-step">
+                                            <div class="step-dot">1</div>
+                                            <div class="step-content">
+                                                <h4>Identify Gaps</h4>
+                                                <p>From appraisal data, manager feedback, employee self-assessment,
+                                                    competency mapping.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="step-dot">2</div>
+                                            <div class="step-content">
+                                                <h4>Prioritise</h4>
+                                                <p>Align with business goals. Categorise as
+                                                    critical/important/nice-to-have.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="step-dot">3</div>
+                                            <div class="step-content">
+                                                <h4>Design Programs</h4>
+                                                <p>Internal vs external trainers. Classroom vs online vs blended. Budget
+                                                    allocation.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="step-dot">4</div>
+                                            <div class="step-content">
+                                                <h4>Execute &amp; Track</h4>
+                                                <p>Calendar, nominations, attendance tracking, completion rates.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="step-dot">5</div>
+                                            <div class="step-content">
+                                                <h4>Evaluate (Kirkpatrick)</h4>
+                                                <p>L1: Reaction (feedback). L2: Learning (assessment). L3: Behaviour
+                                                    (on-job application). L4: Results (business impact).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="inline-disclaimer">Training frameworks are indicative. Scale and formalisation depend
+                            on organisational maturity.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- ═══ EXIT PROCESS ═══ -->
+                <div class="section" id="exit">
+                    <div class="section-header">
+                        <div class="section-icon">🚪</div>
+                        <h2>5. Exit Process</h2>
+                    </div>
+                    <p class="section-purpose">Detailed reference for managing employee separations — voluntary and
+                        involuntary.</p>
+                    <div class="section-body">
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">🔄</span> Exit Process Flow</h3>
+                            <div class="flow-steps">
+                                <div class="flow-step">
+                                    <div class="step-dot">1</div>
+                                    <div class="step-content">
+                                        <h4>Resignation / Separation Initiation</h4>
+                                        <p>Employee submits written resignation, or separation initiated by the
+                                            organisation (termination, retrenchment, retirement, contract expiry). Date
+                                            recorded in HRIS.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">2</div>
+                                    <div class="step-content">
+                                        <h4>Acknowledgement &amp; Notice Period</h4>
+                                        <p>HR acknowledges in writing. Notice period as per appointment terms. Notice
+                                            buyout option if applicable.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">3</div>
+                                    <div class="step-content">
+                                        <h4>Retention Discussion (if applicable)</h4>
+                                        <p>Manager/HR explores if retainable — counter-offer, role change, issue
+                                            resolution. Document outcome.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">4</div>
+                                    <div class="step-content">
+                                        <h4>Exit Interview</h4>
+                                        <p>Conducted by HR. Feedback on experience, management, culture, reasons for
+                                            leaving. Data used for retention strategy.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">5</div>
+                                    <div class="step-content">
+                                        <h4>Handover &amp; Knowledge Transfer</h4>
+                                        <p>Employee hands over responsibilities, SOPs, files, project documentation,
+                                            client relationships.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">6</div>
+                                    <div class="step-content">
+                                        <h4>No-Dues Clearance</h4>
+                                        <p>Clearance from: Reporting Manager, IT (assets), Finance (advances, loans),
+                                            Admin (ID cards, keys), HR.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">7</div>
+                                    <div class="step-content">
+                                        <h4>Full &amp; Final Settlement</h4>
+                                        <p>Calculate: unpaid salary, leave encashment, bonus (prorated), gratuity (if 5+
+                                            years), reimbursements, recoveries.</p>
+                                    </div>
+                                </div>
+                                <div class="flow-step">
+                                    <div class="step-dot">8</div>
+                                    <div class="step-content">
+                                        <h4>Documentation</h4>
+                                        <p>Issue: Relieving Letter, Experience Certificate, Form 16, PF
+                                            transfer/withdrawal details, any pending documents.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">Payroll
+                                Components in F&amp;F — Reference <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="table-wrap">
+                                        <table class="ref-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Component</th>
+                                                    <th>Description</th>
+                                                    <th>Calculation Basis</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Basic Salary</td>
+                                                    <td>Core fixed component (40–50% of CTC)</td>
+                                                    <td>Impacts PF, gratuity, statutory calculations</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HRA</td>
+                                                    <td>Housing allowance (40–50% of Basic)</td>
+                                                    <td>Partial tax exemption if rent paid</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Special Allowance</td>
+                                                    <td>Balancing component</td>
+                                                    <td>Fully taxable</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PF (Employee 12%)</td>
+                                                    <td>Contributed to EPF account</td>
+                                                    <td>12% of Basic + DA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PF (Employer 12%)</td>
+                                                    <td>~3.67% to EPF, ~8.33% to EPS</td>
+                                                    <td>12% of Basic + DA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ESI (Employee 0.75%)</td>
+                                                    <td>If gross ≤ ₹21,000/month</td>
+                                                    <td>0.75% of gross</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ESI (Employer 3.25%)</td>
+                                                    <td>If gross ≤ ₹21,000/month</td>
+                                                    <td>3.25% of gross</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Professional Tax</td>
+                                                    <td>State-level (₹200/month common cap)</td>
+                                                    <td>Slab-based by state</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Gratuity</td>
+                                                    <td>15 days salary per completed year</td>
+                                                    <td>(Last Basic × 15) / 26 per year</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Leave Encashment</td>
+                                                    <td>Unused earned leave</td>
+                                                    <td>Daily rate × unused leave days</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion"><button class="accordion-trigger" onclick="toggleAccordion(this)">Exit
+                                Interview — Sample Questions <span class="chevron">▼</span></button>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <p>1. What prompted your decision to leave?</p>
+                                    <p>2. How would you describe your experience working here?</p>
+                                    <p>3. Did you feel your skills and contributions were valued?</p>
+                                    <p>4. How was your relationship with your reporting manager?</p>
+                                    <p>5. Were there sufficient growth and learning opportunities?</p>
+                                    <p>6. How would you rate the work-life balance?</p>
+                                    <p>7. Is there anything the organisation could have done differently to retain you?
+                                    </p>
+                                    <p>8. Would you consider returning to this organisation in the future?</p>
+                                    <p>9. Would you recommend this organisation to a friend or colleague?</p>
+                                    <p>10. Any other feedback or suggestions?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="inline-disclaimer">Exit process steps are indicative. Adapt to your organisation's
+                            policy.</p>
+                    </div>
+                </div>
+
+            </div>
+            <footer class="global-footer" id="globalFooter"></footer>
+        </main>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Top">↑</button>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>

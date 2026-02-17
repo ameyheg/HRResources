@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goa Reference — HR Resources</title>
+    <meta name="description"
+        content="Goa-specific HR reference — minimum wages, state holidays, professional tax, tourism sector HR, key government offices, and local compliance." />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body data-page="goa">
+    <div class="reading-progress" id="readingProgress"></div>
+    <canvas id="particleCanvas"></canvas>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="app-layout">
+        <aside class="sidebar" id="sidebar"></aside>
+        <main class="main-content">
+            <div class="page-header">
+                <div class="page-header-inner">
+                    <h1>🏖️ Goa — State-Specific HR Reference</h1>
+                    <p>Comprehensive reference points for HR operations in the State of Goa. Covering minimum wages,
+                        taxes, holidays, registrations, tourism sector considerations, and key government contacts. All
+                        information is indicative.</p>
+                </div>
+            </div>
+            <div class="content-area">
+
+                <!-- GOA OVERVIEW -->
+                <div class="section" id="goa-overview">
+                    <div class="section-header">
+                        <div class="section-icon">📍</div>
+                        <h2>Goa at a Glance — HR Context</h2>
+                    </div>
+                    <div class="section-body">
+                        <div class="goa-banner"><span class="banner-icon">🏖️</span>
+                            <div>
+                                <h3>State of Goa — Key HR Facts</h3>
+                                <p>Capital: Panaji | Districts: North Goa, South Goa | Official Language: Konkani | Key
+                                    Industries: Tourism, Hospitality, IT, Mining, Pharmaceuticals, Fishing</p>
+                            </div>
+                        </div>
+                        <div class="table-wrap">
+                            <table class="ref-table">
+                                <thead>
+                                    <tr>
+                                        <th>Aspect</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Applicable Shop &amp; Establishment Act</td>
+                                        <td>Goa Shops &amp; Commercial Establishments Act</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Professional Tax</td>
+                                        <td>Yes — levied on employment, varying slabs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Labour Welfare Fund</td>
+                                        <td>Applicable — contributions as per state rates</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Minimum Wages</td>
+                                        <td>Notified periodically by the state government (see table below)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Key Labour Office</td>
+                                        <td>Directorate of Labour &amp; Employment, Panaji</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seasonal Employment</td>
+                                        <td>Significant in tourism/hospitality — Oct to Mar peak season</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Government Forms Language</td>
+                                        <td>Konkani (Devanagari script) and English</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- MINIMUM WAGES -->
+                <div class="section" id="min-wages">
+                    <div class="section-header">
+                        <div class="section-icon">💰</div>
+                        <h2>Minimum Wages — Goa</h2>
+                    </div>
+                    <p class="section-purpose">Indicative minimum wage ranges for Goa. Actual rates are notified
+                        periodically by the state government and vary by scheduled employment type.</p>
+                    <div class="section-body">
+                        <div class="callout note"><span class="callout-icon">📌</span><span>These figures are
+                                approximate / indicative ranges based on recent notifications. Always refer to the
+                                latest official gazette notification for current rates.</span></div>
+                        <div class="table-wrap">
+                            <table class="ref-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Skill Level</th>
+                                        <th>Indicative Daily Rate Range</th>
+                                        <th>Indicative Monthly (26 days)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shops &amp; Commercial Establishments</td>
+                                        <td>Unskilled</td>
+                                        <td>₹ 400 – ₹ 470</td>
+                                        <td>₹ 10,400 – ₹ 12,220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shops &amp; Commercial Establishments</td>
+                                        <td>Semi-skilled</td>
+                                        <td>₹ 440 – ₹ 510</td>
+                                        <td>₹ 11,440 – ₹ 13,260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shops &amp; Commercial Establishments</td>
+                                        <td>Skilled</td>
+                                        <td>₹ 480 – ₹ 570</td>
+                                        <td>₹ 12,480 – ₹ 14,820</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shops &amp; Commercial Establishments</td>
+                                        <td>Highly Skilled</td>
+                                        <td>₹ 530 – ₹ 630</td>
+                                        <td>₹ 13,780 – ₹ 16,380</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hotels, Restaurants &amp; Eating Houses</td>
+                                        <td>Unskilled</td>
+                                        <td>₹ 410 – ₹ 480</td>
+                                        <td>₹ 10,660 – ₹ 12,480</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hotels, Restaurants &amp; Eating Houses</td>
+                                        <td>Semi-skilled</td>
+                                        <td>₹ 450 – ₹ 530</td>
+                                        <td>₹ 11,700 – ₹ 13,780</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hotels, Restaurants &amp; Eating Houses</td>
+                                        <td>Skilled</td>
+                                        <td>₹ 500 – ₹ 590</td>
+                                        <td>₹ 13,000 – ₹ 15,340</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Construction</td>
+                                        <td>Unskilled</td>
+                                        <td>₹ 430 – ₹ 500</td>
+                                        <td>₹ 11,180 – ₹ 13,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Construction</td>
+                                        <td>Skilled (Mason, Carpenter)</td>
+                                        <td>₹ 550 – ₹ 680</td>
+                                        <td>₹ 14,300 – ₹ 17,680</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT / Electronic Data Processing</td>
+                                        <td>Data Entry Operator</td>
+                                        <td>₹ 450 – ₹ 530</td>
+                                        <td>₹ 11,700 – ₹ 13,780</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT / Electronic Data Processing</td>
+                                        <td>Programmer / Analyst</td>
+                                        <td>₹ 550 – ₹ 700</td>
+                                        <td>₹ 14,300 – ₹ 18,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Security Guards / Watchmen</td>
+                                        <td>—</td>
+                                        <td>₹ 420 – ₹ 490</td>
+                                        <td>₹ 10,920 – ₹ 12,740</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Domestic Workers</td>
+                                        <td>—</td>
+                                        <td>₹ 350 – ₹ 420</td>
+                                        <td>₹ 9,100 – ₹ 10,920</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="callout info"><span class="callout-icon">ℹ️</span><span><strong>VDA (Variable
+                                    Dearness Allowance):</strong> In addition to basic minimum wages, a VDA component is
+                                commonly added, revised periodically based on consumer price index changes.</span></div>
+                        <p class="inline-disclaimer">These figures are approximate. Always verify with the latest Goa
+                            Government gazette notification.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- PROFESSIONAL TAX -->
+                <div class="section" id="pt">
+                    <div class="section-header">
+                        <div class="section-icon">🏛️</div>
+                        <h2>Professional Tax — Goa</h2>
+                    </div>
+                    <p class="section-purpose">Indicative Professional Tax slab structure for Goa. Applicable to
+                        employers and employees.</p>
+                    <div class="section-body">
+                        <div class="table-wrap">
+                            <table class="ref-table">
+                                <thead>
+                                    <tr>
+                                        <th>Monthly Salary / Income Range</th>
+                                        <th>Tax Per Month (Indicative)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Up to ₹ 10,000</td>
+                                        <td>Nil</td>
+                                    </tr>
+                                    <tr>
+                                        <td>₹ 10,001 – ₹ 15,000</td>
+                                        <td>₹ 150</td>
+                                    </tr>
+                                    <tr>
+                                        <td>₹ 15,001 – ₹ 25,000</td>
+                                        <td>₹ 200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Above ₹ 25,000</td>
+                                        <td>₹ 200 (maximum per month)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="callout note"><span class="callout-icon">📌</span><span><strong>Employer
+                                    obligation:</strong> Employers register for PT, deduct from employee salaries
+                                monthly, and remit to the state. Annual return filing is also commonly required. Maximum
+                                professional tax per individual is capped at ₹ 2,500 per annum (i.e., ₹ 200/month
+                                for 11 months + ₹ 300 in February, as commonly practised).</span></div>
+                        <p class="inline-disclaimer">Slab rates change periodically. Refer to the Goa Professional Tax
+                            Department for current rates.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- STATE HOLIDAYS -->
+                <div class="section" id="holidays">
+                    <div class="section-header">
+                        <div class="section-icon">📅</div>
+                        <h2>Public Holiday Awareness — Goa</h2>
+                    </div>
+                    <p class="section-purpose">Indicative list of holidays commonly observed in Goa. Actual holidays are
+                        published annually by the state government.</p>
+                    <div class="section-body">
+                        <div class="tab-nav">
+                            <button class="tab-btn active" data-tab="tab-national">National Holidays</button>
+                            <button class="tab-btn" data-tab="tab-state">Goa-Specific / Regional</button>
+                        </div>
+                        <div class="tab-panel active" id="tab-national">
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Holiday</th>
+                                            <th>Approx. Date</th>
+                                            <th>Type</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Republic Day</td>
+                                            <td>26 January</td>
+                                            <td>National</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Independence Day</td>
+                                            <td>15 August</td>
+                                            <td>National</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gandhi Jayanti</td>
+                                            <td>2 October</td>
+                                            <td>National</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Holi</td>
+                                            <td>March (varies)</td>
+                                            <td>Gazetted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Good Friday</td>
+                                            <td>March/April (varies)</td>
+                                            <td>Gazetted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ram Navami</td>
+                                            <td>April (varies)</td>
+                                            <td>Gazetted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Eid ul-Fitr</td>
+                                            <td>Varies</td>
+                                            <td>Gazetted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Eid ul-Adha</td>
+                                            <td>Varies</td>
+                                            <td>Gazetted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dussehra</td>
+                                            <td>October (varies)</td>
+                                            <td>Gazetted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Diwali (Naraka Chaturdashi + Diwali)</td>
+                                            <td>October/November</td>
+                                            <td>Gazetted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Christmas</td>
+                                            <td>25 December</td>
+                                            <td>Gazetted</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="tab-state">
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Holiday</th>
+                                            <th>Significance</th>
+                                            <th>Notes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Goa Liberation Day</td>
+                                            <td>19 December — Liberation of Goa from Portuguese rule (1961)</td>
+                                            <td>State holiday</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Goa Statehood Day</td>
+                                            <td>30 May — Goa became a full state (1987)</td>
+                                            <td>State holiday</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feast of St. Francis Xavier</td>
+                                            <td>3 December — Patron saint of Goa</td>
+                                            <td>Widely observed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shigmo (Shigmotsav)</td>
+                                            <td>Goan spring festival (Feb/Mar)</td>
+                                            <td>Sometimes restricted holiday</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carnival</td>
+                                            <td>3 days before Lent (Feb/Mar)</td>
+                                            <td>Unique to Goa; sometimes partial holiday</td>
+                                        </tr>
+                                        <tr>
+                                            <td>All Saints' Day</td>
+                                            <td>1 November</td>
+                                            <td>Observed in some establishments</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feast of Our Lady of Immaculate Conception</td>
+                                            <td>8 December</td>
+                                            <td>Widely observed in Panaji</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p class="inline-disclaimer">Official holiday lists are published annually. Restricted holidays
+                            may be available for selection by employees.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- REGISTRATIONS -->
+                <div class="section" id="registrations">
+                    <div class="section-header">
+                        <div class="section-icon">📋</div>
+                        <h2>Establishment Registrations — Goa</h2>
+                    </div>
+                    <p class="section-purpose">Common registrations for businesses setting up or operating in Goa.</p>
+                    <div class="section-body">
+                        <div class="table-wrap">
+                            <table class="ref-table">
+                                <thead>
+                                    <tr>
+                                        <th>Registration</th>
+                                        <th>Authority</th>
+                                        <th>Key Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shops &amp; Commercial Establishments</td>
+                                        <td>Labour Department / Online (Goa Online)</td>
+                                        <td>Required for all commercial establishments. Annual renewal.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Professional Tax (Employer)</td>
+                                        <td>Goa Professional Tax Department</td>
+                                        <td>Register within 30 days of employing staff</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Professional Tax (Employee Enrollment)</td>
+                                        <td>Through employer</td>
+                                        <td>Deducted from salary and remitted by employer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Labour Welfare Fund</td>
+                                        <td>State LWF Board</td>
+                                        <td>Contributions from employer and employee</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FSSAI (Food businesses)</td>
+                                        <td>Food Safety Department</td>
+                                        <td>Required for restaurants, hotels, catering</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tourism Department Registration</td>
+                                        <td>Goa Tourism Department</td>
+                                        <td>Hotels, resorts, tour operators</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Excise Licence</td>
+                                        <td>Excise Department, Goa</td>
+                                        <td>For establishments serving alcohol</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Panchayat / Municipal NOC</td>
+                                        <td>Local Panchayat or Municipality</td>
+                                        <td>For commercial operations in the area</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pollution Control Board NOC</td>
+                                        <td>Goa State Pollution Control Board</td>
+                                        <td>For manufacturing, mining, certain industries</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="inline-disclaimer">Requirements vary by business type and size. Verify with the
+                            respective authorities.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- TOURISM / HOSPITALITY -->
+                <div class="section" id="tourism">
+                    <div class="section-header">
+                        <div class="section-icon">🏨</div>
+                        <h2>Tourism &amp; Hospitality Sector — HR Considerations</h2>
+                    </div>
+                    <p class="section-purpose">Sector-specific awareness points for HR practitioners in Goa's tourism
+                        and hospitality industry.</p>
+                    <div class="section-body">
+                        <div class="sub-section">
+                            <h3><span class="sub-icon">📊</span> Key Considerations</h3>
+                            <div class="table-wrap">
+                                <table class="ref-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Area</th>
+                                            <th>Awareness Point</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Seasonal Staffing</td>
+                                            <td>Peak season (October–March) requires temporary/contract staff. Ensure
+                                                proper documentation even for short-term hires.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Extended Working Hours</td>
+                                            <td>Hotels and restaurants commonly operate beyond standard hours. Overtime
+                                                provisions may apply as per applicable laws.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tip / Service Charge</td>
+                                            <td>Guidelines on service charge distribution vary. Transparency with staff
+                                                recommended.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Multilingual Workforce</td>
+                                            <td>Staff may speak Konkani, Marathi, Hindi, English, Kannada. Communication
+                                                materials may need to be multilingual.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Work Permits (Foreign Staff)</td>
+                                            <td>Foreign nationals require valid employment visa and FRRO registration.
+                                                Employer to verify.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>POSH Compliance</td>
+                                            <td>Especially important in hospitality. Staff training and visible policy
+                                                display are key.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Accommodation for Staff</td>
+                                            <td>Common for hotels to provide staff quarters. Standards and expectations
+                                                should be documented.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Uniform &amp; Grooming</td>
+                                            <td>Industry-standard grooming policies. Uniform provision and maintenance
+                                                commonly employer's responsibility.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>F&amp;B Licensing</td>
+                                            <td>FSSAI, excise, and health department compliance for food service
+                                                operations.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Guest Interaction Training</td>
+                                            <td>Customer service, conflict resolution, cultural sensitivity — ongoing
+                                                training needs.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p class="inline-disclaimer">These are awareness points specific to the tourism/hospitality
+                            sector in Goa. Adapt to your establishment's context.</p>
+                    </div>
+                </div>
+                <div class="section-divider"></div>
+
+                <!-- KEY OFFICES -->
+                <div class="section" id="offices">
+                    <div class="section-header">
+                        <div class="section-icon">🏛️</div>
+                        <h2>Key Government Offices — Goa</h2>
+                    </div>
+                    <p class="section-purpose">Commonly referenced government offices for HR and compliance in Goa.</p>
+                    <div class="section-body">
+                        <div class="table-wrap">
+                            <table class="ref-table">
+                                <thead>
+                                    <tr>
+                                        <th>Office</th>
+                                        <th>Function</th>
+                                        <th>Location</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Directorate of Labour &amp; Employment</td>
+                                        <td>Labour law enforcement, registrations, dispute resolution</td>
+                                        <td>Panaji</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Office of the Commissioner of Labour</td>
+                                        <td>Shops &amp; Establishments, contract labour, industrial disputes</td>
+                                        <td>Panaji</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Professional Tax Department</td>
+                                        <td>PT registration, filings, compliance</td>
+                                        <td>Panaji</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Regional PF Commissioner's Office</td>
+                                        <td>EPF-related employer matters, inspections</td>
+                                        <td>Panaji</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ESI Regional Office</td>
+                                        <td>ESI registration, coverage, dispensaries</td>
+                                        <td>Margao / Panaji</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Income Tax Office</td>
+                                        <td>TDS, tax assessments, PAN services</td>
+                                        <td>Panaji</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Labour Court / Industrial Tribunal</td>
+                                        <td>Dispute resolution, unfair labour practice cases</td>
+                                        <td>Panaji</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Goa State Pollution Control Board</td>
+                                        <td>Environmental clearances for industries</td>
+                                        <td>Panaji</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Directorate of Food &amp; Drug Administration</td>
+                                        <td>FSSAI, food safety compliance</td>
+                                        <td>Panaji</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Goa Chamber of Commerce &amp; Industry</td>
+                                        <td>Business networking, policy advocacy (non-government)</td>
+                                        <td>Panaji</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="inline-disclaimer">Contact details and jurisdictions may change. Verify with the
+                            respective offices for current information.</p>
+                    </div>
+                </div>
+
+            </div>
+            <footer class="global-footer" id="globalFooter"></footer>
+        </main>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Top">↑</button>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
